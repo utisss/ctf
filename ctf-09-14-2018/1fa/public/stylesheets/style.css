@@ -1,0 +1,25 @@
+body {
+  padding: 0;
+  padding-bottom: 2em;
+  margin: 0;
+  font: 18px Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 700px;
+  display: inline-block;
+}
+
+.headerblock {
+  background-color: black;
+}
+
+form {
+  text-align: left;
+  display: inline-block;
+}
+
+a {
+  color: #00B7FF;
+}

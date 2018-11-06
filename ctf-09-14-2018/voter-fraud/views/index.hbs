@@ -1,0 +1,41 @@
+<h1>WHO WOULD WIN?</h1>
+<div style="font-weight: bold; color: green; font-size: 1.5rem">{{flag}}</div>
+<p>Who is the best ISSS President?</p>
+<div class="presidents">
+    <div>
+        <img src="/images/william.jpg" width="150px" height="150px" />
+        <div class="name william">William</div>
+        <div class="votes">{{william}}<br>votes</div>
+    </div>
+    <div>
+        <img src="/images/neil.jpg" width="150px" height="150px" />
+        <div class="name neil">Neil</div>
+        <div class="votes">{{neil}}<br>votes</div>
+    </div>
+    <div>
+        <img src="/images/brian.jpg" width="150px" height="150px" />
+        <div class="name brian">Brian</div>
+        <div class="votes">{{brian}}<br>votes</div>
+    </div>
+    <div>
+        <img src="/images/jonathan.jpg" width="150px" height="150px" />
+        <div class="name jonathan">Jonathan</div>
+        <div class="votes">{{jonathan}}<br>votes</div>
+    </div>
+</div>
+<div class="form">
+<form action="vote" method="post">
+    <select name="id">
+        <option value="0">copperstick6</option>
+        <option value="1">patil215</option>
+        <option value="2">theBrianCui</option>
+        <option value="3">jfishyoyo7</option>
+    </select>
+    <select name="value">
+        <option value="1">1 vote</option>
+        <option value="2">2 votes</option>
+        <option value="3">3 votes</option>
+    </select>
+    <button type="submit" value="submit">Cast Vote</button>
+</form>
+</div>

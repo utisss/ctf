@@ -1,0 +1,8 @@
+Student		Grade
+
+Michael Asper 	A
+William Han 	C
+Neil Patil	A-
+Alex Bellon	C-
+Joshua Wong	F-
+Greg Fenves	D+

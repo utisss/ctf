@@ -1,0 +1,53 @@
+<h1>Amazin Secure Portal</h1>
+<p>Amazin Web Services is the number one place to host your web applications. Our values include obsessing over customers and stinginess so we can provide you with the absolute best value in cloud services.</p>
+<p><strong>Sign in</strong> to access your Amazin Web Services console.</p>
+
+{{#if incorrect}}
+<h3 style="color: red">Incorrect login.</h3>
+{{/if}}
+
+<form action="/login" method="POST">
+<table>
+    <tr>
+        <td>Username</td>
+        <td><input type="text" name="username" maxlength="20"></td>
+    </tr>
+    <tr>
+        <td>Authenticator Token</td>
+        <td><input type="text" name="password" maxlength="6"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><button type="submit">Think Big</button></td>
+    </tr>
+</table>
+</form>
+
+<p>Don't have an account yet? <strong>Create one now!</strong></p>
+
+{{#if error}}
+<h3 style="color: red">Invalid request. DEBUG: Please message willh if this continues.<h3>
+{{/if}}
+
+{{#if userExists}}
+<h3 style="color: red">A user with that account name alredy exists.<br/> Please try again!</h3>
+{{/if}}
+
+<form action="/register" method="POST">
+<table>
+    <tr>
+        <td>New Username</td>
+        <td><input type="text" name="username" maxlength="20"></td>
+    </tr>
+    <tr>
+        <td><input type="hidden" name="t" value="{{timestamp}}" /></td>
+        <td><button type="submit">Deliver Results</button></td>
+    </tr>
+</table>
+</form>
+
+<script>
+console.log("Amazin Web Services console v0.0.1 alpha");
+console.log("Uptime: {{uptime}} ms (new uptime record!)");
+console.log("TODO willh please remove these console logs");
+</script>

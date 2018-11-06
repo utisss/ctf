@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+    font-size: 14px;
+    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.presidents > div {
+    display: inline-block;
+    width: 150px;
+    padding: .5rem;
+    vertical-align: top;
+}
+
+.name {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.votes {
+    word-wrap: break-word;
+}
+
+.form {
+    margin-top: 1rem;
+}
