@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    
+        <title>Medium SQL Injection</title>
+
+        <style type="text/css" ="screen">
+            .container {
+                text-align: center; 
+            }
+            body {
+                background-image: url("/static/cute-dog.jpg");
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div class="container">
+            <h1>Generic Pet Store</h1>
+            <div>
+                <h3>Checkout our great reviews</h3>
+                <form action="/" method="POST"> 
+                    <p>Rating: <br>
+                    <input type="number" name="rating" min="1" max="5">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div id="output">
+                {% for datum in data %}
+                    <div id="info">
+                        <span>User: {{datum['name']}}</span><br>
+                        <span>Review: {{datum['review']}}</span><br>
+                        <span>Rating: {{datum['rating']}}</span><br>
+                    </div>
+                    <br>
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>

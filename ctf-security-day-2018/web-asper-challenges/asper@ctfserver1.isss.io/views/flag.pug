@@ -1,0 +1,24 @@
+html(lang="en")
+    head
+        style
+            include ../static/style.css
+        link(href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet")
+        title Mars 
+        meta(name="viewport")
+    body
+        
+        .content
+            if rocketBool && engineBool
+                h1 Congratulations
+                p utflag{t0_infinity_and_b3y0nd}
+            else if engineBool
+                h1 You are not suited for the flag
+                p Your engine is pretty nice, but the rocket won't last
+            else if rocketBool
+                h1 You are not suited for the flag
+                p Nice rocket, but old engine won't work
+            else
+                h1 You are not suited for the flag
+                p Your rocket is too old and warp engine is too weak.
+
+                        

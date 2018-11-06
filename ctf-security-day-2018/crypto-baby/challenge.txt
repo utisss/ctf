@@ -1,0 +1,7 @@
+Problem name: Don't be a baby!
+
+William and Billiam were having a HEATED ARGUMENT about their favorite OPERATING SYSTEMS (and may have broken their CAPS LOCK keys in the process). Luckily for us, they were foolish enough to use the same XOR key! Can you figure out which one each prefers?
+
+3c542e2d35225b3e163d313d213a574528163e3c365426207f3229294c7075626353
+
+2c3b334c20353e4908213a3c3147562c44133f3f2b543f3a11322e3f4c7f7f63725c

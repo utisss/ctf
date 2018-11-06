@@ -1,0 +1,30 @@
+binary-floatbuffer - 70
+binary-hoops - 140
+binary-inspector-gadget - 250
+crypto-caesar - 30
+crypto-rsa - 75
+crypto-baby - 100
+crypto-not-truly-random - 130
+forensics-easy - 30
+forensics-crack-the-file - 70
+forensics-hard - 200
+forensics-wireshark-network - 200
+misc-trivia - 30 each
+misc-befunge-collatz - 150
+recon-willys-missing-wallet - 40
+recon-twitter - 70 - Make this less bsey (link engadget article)
+reveng-android - 125
+reveng-unsha1shing - 200
+web-client-side-time - 50
+web-s3-bucket - 50
+web-sourcecode - 70
+web-sqli-medium - 90
+web-s3-bucket-2 - 100
+web-ec2-file - 100 - Give them more information
+web-path - 150
+
+150 average point value
+
+Easy - <70
+Medium - 70-150
+Hards - >150

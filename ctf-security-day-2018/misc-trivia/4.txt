@@ -1,0 +1,10 @@
+Title: Trivia 4
+
+Question:
+This faulty WordPress plugin had a vulnerability that was a possible cause of a recent data breach that led to millions of leaked documents. What was the plugin called? (two words)
+
+Answer:
+Revolution Slider
+
+
+(data breach was the panama papers)

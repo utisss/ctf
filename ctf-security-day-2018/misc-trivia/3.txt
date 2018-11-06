@@ -1,0 +1,7 @@
+Title: Trivia 3
+
+Question:
+Named after a canine, this network security tool helps visualize paths to a domain controller in an Active Directory environment. What's it's name? Hint: it's NOT Kerberos.
+
+Answer:
+BloodHound (or Bloodhound or bloodhound)

@@ -1,0 +1,30 @@
+html(lang="en")
+    head
+        style
+            include ../static/style.css
+        link(href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet")
+        title Path less chosen 
+        meta(name="viewport")
+    body
+        
+        .content
+            h1 Choose your adventure
+
+            p You are an space explorer trying to find the flag. Here are you options below:
+            // maybe there are more paths?
+            .buttons
+                ul
+                    li 
+                        a(href="space?path=mars") Fly to mars
+                    li 
+                        a(href="space?path=rocket") Upgrade rocket
+                    li 
+                        a(href="space?path=engine") Improve warp engine
+                    li 
+                        a(href="space?path=anime") Stay home and watch anime
+
+
+
+        #info
+            script(src="/jquery.js")
+                        

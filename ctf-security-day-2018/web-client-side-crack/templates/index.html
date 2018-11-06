@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    
+        <title>Animal Grocery Store Login</title>
+
+        <style type="text/css" ="screen">
+            .container {
+                text-align: center; 
+                background-color: rgba(255, 255, 255, 0.8);
+            }
+            body {
+                background-image: url("/static/animal.jpg");
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div class="container">
+                <h3>Central Marmot</h3>
+                <form action="/login" id="login" method="post" accept-charset="utf-8">
+                    <p> Password: </p><br> 
+                    <input id="pass" type="text" name="pass" placeholder="Enter password"> 
+                    <p id="error" style="color:red"></p>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            
+        </div>
+        
+        <script src="/static/md5.min.js"></script> 
+        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script> 
+        <script>
+            $("#login").submit(function(e) {
+
+                var pass = $("#pass").val();
+
+                if (md5(pass) != "9f6e6800cfae7749eb6c486619254b9c") {
+                    e.preventDefault();
+                    $("#error").html("Wrong password. Try Again"); 
+                }
+            });
+        </script>
+    </body>
+</html>

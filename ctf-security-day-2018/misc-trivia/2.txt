@@ -1,0 +1,8 @@
+Title: Trivia 2
+
+Question:
+
+This security-focused operating system routes all of its internet traffic using Tor - a technology that also shares same first letter as the OS's name. What's the name of this OS?
+
+Answer:
+Tails

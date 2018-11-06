@@ -1,0 +1,10 @@
+Title: Trivia 5
+
+Question:
+These "fruits" are commonly used for man-in-the-middle attacks at the local level. What is this product called?
+
+
+Answer:
+Wifi Pineapple
+
+
