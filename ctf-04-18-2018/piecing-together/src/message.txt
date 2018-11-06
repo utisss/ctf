@@ -1,0 +1,7 @@
+Hey Willy,
+
+Sorry for having to use this obscure message transfer system - I didn't want it to be easily tracked.
+
+Anyways, here's the message you wanted: utflag{leet_speak_is_for_script_kiddies}
+
+Neil

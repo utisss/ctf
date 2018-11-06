@@ -1,0 +1,25 @@
+{
+  "name": "website",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "crypto-js": "^3.1.9-1",
+    "install": "^0.11.0",
+    "material-ui": "^0.20.0",
+    "material-ui-icons": "^1.0.0-beta.36",
+    "npm": "^5.8.0",
+    "react": "^16.3.2",
+    "react-bootstrap": "^0.32.1",
+    "react-cookie": "^2.1.4",
+    "react-dom": "^16.3.2",
+    "react-router-bootstrap": "^0.24.4",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

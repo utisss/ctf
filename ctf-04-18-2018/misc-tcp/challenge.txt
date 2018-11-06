@@ -1,0 +1,10 @@
+Super Interesting Message
+
+Your friend has a super secret server that contains super secret messages and you've figured out how it's protocol. Can you find potentially world-changing message within?
+
+The Server will send 5 packets consisting of 2 4-byte integers, the first being an unsigned random number and the second being the numebr of the packet (numbered 1 through 5)
+
+You should send back 5 packets consisting of 2 4-byte integers, the first being the sum of the digits of the first random number and and the second being the number of the packet
+
+After sending the 5 packets you will receive a special message 
+
