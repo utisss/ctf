@@ -7,4 +7,4 @@ This repository contains a copy of the problems created for each of our CTF cont
 
 Feel free to consult this repository and try challenges yourself! We usually keep challenges running for a few days after the events on [ctf.isss.io](http://ctf.isss.io), but once those are down they'll be moved here.
 
-If you'd like to contact any of the officers about these challenges, you can reach us through our website, [isss.io](http://isss.io).
+If you'd like to contact any of the officers about these challenges, you can reach us through our website, [isss.io](http://isss.io), or over email at [officers@isss.io](mailto:officers@isss.io).
