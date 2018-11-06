@@ -1,0 +1,7 @@
+We found this message sniffing packets on public WiFi network. I wonder where this leads us...
+
+---
+
+I have a brilliant new idea for a startup! It'll send shivers down your spine for sure. I've secured it on this server:
+s3://startup-secrets
+Make sure you don't show this to anyone who hasn't signed our NDA.

@@ -1,0 +1,3 @@
+This World War II era cipher depended on a family of rotor scrambler machines, and was key to German military communication until it was broken by a group of English scientists, the most famous of which was Alan Turing. What's it called?
+
+Enigma

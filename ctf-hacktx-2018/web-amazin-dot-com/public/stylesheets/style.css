@@ -1,0 +1,55 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.logoWrapper {
+  margin: 0 auto;
+  background-color: black;
+  text-align: center;
+  padding: 20px 0;
+}
+
+div.pageWrapper {
+  margin: 0 auto;
+  width: 900px;
+  padding: 2em;
+  text-align: center;
+}
+
+a {
+  color: #00B7FF;
+}
+
+table.products {
+  display: inline-block;
+  width: 900px;
+}
+
+table.products tr:first-child {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+table.products td img {
+  max-width: 160px;
+  max-height: 160px;
+}
+
+table.products td {
+  padding: 6px 10px;
+}
+
+table.products .productName {
+  font-size: 24px;
+}
+
+table.products .price {
+  color: #B12704;
+  font-size: 20px;
+}
+
+button.bigButton {
+  font-size: 24px;
+}

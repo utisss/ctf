@@ -1,0 +1,1 @@
+We were able to break in and get our enemy's router config file. Can you figure out what his admin password is?

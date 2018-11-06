@@ -1,0 +1,51 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #edf0f5;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+div.pageWrapper {
+  margin: 0 auto;
+  width: 600px;
+  padding: 2em;
+  text-align: center;
+}
+
+a {
+  color: #00B7FF;
+}
+
+div.fbHeader {
+  background-color: #4267b2;
+  height: 150px;
+  line-height: 150px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 64px;
+  font-weight: bold;
+  padding-left: 100px;
+}
+button.signup {
+  font-size: 32px;
+}
+
+div.register {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 20px 100px;
+  font-size: 24px;
+}
+
+form.login {
+  display: inline-block;
+  float: right;
+  padding-right: 100px;
+  margin-top: -10px;
+}
+
+form.login input {
+  width: 200px;
+}

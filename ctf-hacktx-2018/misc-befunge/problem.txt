@@ -1,0 +1,13 @@
+Befunge is an interesting little language - and the best part is, you don't need any prior experience with other languages to write in it!
+
+Write a Befunge program that prints out the first 10 powers of 5, from 5^0 (1) to 3^9 (1953125) (inclusive). For an extra challenge, your program must be less than 30 characters (NOT INCLUDING WHITESPACE).
+
+More Details:
+- Your program does not need to print any spaces between the numbers, so it'll be of the format:
+1525....1953125.
+
+- The easiest way to submit your problem is to do the following: Write it in a text file. Then, in a command shell, type:
+nc 107.20.7.159 8888 < solution.txt
+Where solution.txt is the name of the text file. This uses netcat to send the file. If you're not sure what this is, do the NETCATCHALLENGE. If you still need help, talk to one of the officers.
+
+- You can find some information about Befunge at https://en.wikipedia.org/wiki/Befunge. There's also an interpreter you can use to test at https://www.bedroomlan.org/tools/befunge-playground#prog=hello,mode=edit.

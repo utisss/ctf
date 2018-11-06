@@ -1,0 +1,19 @@
+{{#if flag}}
+<h1>Your next utility bill: $ 81,021.72</h1>
+<h2 class="flag">{{flag}}</h2>
+{{/if}}
+<h1>{{title}}</h1>
+<h3>Welcome to your Honeymoat (tm) Remote Thermostat! Using the Honeymoat (tm) Remote Thermostat, you can control your thermostat from the comfort of your own couch.</h3>
+
+<div class="thermostat">
+<div style="font-weight: bold; margin-bottom: 10px; margin-top: 10px;">{{date}}</div>
+
+<form action="/submit" method="POST">
+<span style="margin-right: 20px">SET TEMP</span><input name="temp" type="number" value="{{temp}}" min="0" max="100" style="width: 50px" /> °F<br/>
+<button type="submit">Submit</button>
+</form>
+</div>
+
+<p>
+Note: Honeymoat (tm) is not responsible for surcharges and damages caused by extreme temperature choices.
+</p>

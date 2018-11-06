@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="fbHeader">
+      fakebook
+      <form class="login" action="/" method="GET">
+        <input type="text" placeholder="Username" />
+        <input type="password" placeholder="Password" />
+        <input type="hidden" name="login" value="1" />
+        <button type="submit">Log In</button>
+      </form>
+    </div>
+    {{#if login}}
+    <div class="register">
+      Username or password incorrect.
+    {{/if}}
+    {{#if register}}
+    <div class="register">
+      Oh no, registration failed! Looks like our servers are down due to a security breach affecting 500 million of our user accounts. Please give us a week before registering again.
+    {{/if}}
+    </div>
+    <div class="pageWrapper">
+      {{#if flag}}
+        <h2>Welcome to the society. {{flag}}</h2>
+        <h3>Please watch this introductory video to <a href="https://www.youtube.com/watch?v=jiudBq7z8wk">see how to respond to inquiries.</a></h3>
+      {{/if}}
+      {{#unless flag}}
+      {{{body}}}
+      {{/unless}}
+    </div>
+    <img src="http://isss-ctf-fakebook.herokuapp.com/track.png" />
+  </body>
+</html>

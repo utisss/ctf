@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Neil's Advertising Emporium</title>
+  <link rel='stylesheet' href='{{ url_for('static', filename='style.css') }}' />
+</head>
+
+<body>
+  <div class="banner">
+    Neil's Advertising Emporium
+  </div>
+
+  <div style="text-align: center">
+    <img src="https://i.imgur.com/SmsqtQ5.png" style="width: 800px; margin-bottom: -10px;" />
+  </div>
+  <div class="pageWrapper">
+    <p>Welcome to Neil's Advertising Emporium! Here at Neil's, we are committed to bringing you the best value in
+      advertising services right here on this webpage. You can't beat our prices.</p>
+    <table>
+
+         <tr class="header">
+         {% for item in result[0] %}
+             <td> {{ item }} </td>
+         {% endfor %}
+         </tr>
+          {% for item in result %}
+             <tr>
+             {% for key, value in item.items() %}
+                  <th> {{ value}} </th>
+             {% endfor %}
+            </tr>
+          {% endfor %}
+    </table>
+  </div>
+</body>
+<script>
+console.log("DEBUG: NEIL, DISABLE ?query endpoint BEFORE DEPLOYMENT!!!")
+</script>
+
+</html>

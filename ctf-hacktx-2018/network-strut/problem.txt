@@ -1,0 +1,5 @@
+We found a simple server running on 192.168.1.10. We're pretty sure it's vulnerable to CVE-2018-11776 on the page "192.168.1.10/help.action", and that we can use it to get a flag that's stored on the system...
+
+Hint: Metasploit is a framework that will make this very easy for you.
+
+For this problem, you'll need to connect to one of the HackTXCTF networks - either HackTXCTF-2, HackTXCTF-5, or HackTXCTF-A. The password is "hacktxctf".

@@ -1,0 +1,3 @@
+This type of attack is commonly used to let an attacker authenticate to a remove server without having the user's password - only a hash. What's it called? (3 words)
+
+Pass the Hash

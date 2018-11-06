@@ -1,0 +1,3 @@
+This algorithm, only possible with the advent of quantum computers, will make factoring prime numbers nearly trivial, potentially breaking the inherent security of RSA and other cryptographic systems. What's it called?
+
+Shor's Algorithm

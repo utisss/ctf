@@ -1,0 +1,3 @@
+I realized this might not be the most secure way to share files, so I've configured a new bucket that should keep any strangers out. Make sure you use your dev machine to access it. All of our competitors are in the US, so this should stop them from snooping around. Liberté, égalité, fraternité!
+
+s3://secret-business-plan

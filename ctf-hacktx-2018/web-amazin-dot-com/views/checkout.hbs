@@ -1,0 +1,55 @@
+<h1>{{title}}</h1>
+<p>Your cart is below. Amazin accepts almost all forms of payment, including credit cards and bitcoins. A FREE flag is included with each order (shipping and handling fees depend on location, minimum payment $2.99/day reqiured for 12 mo).</p>
+<table class="products">
+    <tr>
+        <td>
+            Image
+        </td>
+        <td>
+            Name
+        </td>
+        <td>
+            Our Price
+        </td>
+        <td>
+            Quantity
+        </td>
+    </tr>
+    {{#each products}}
+    <tr>
+        <td><img src="/images/{{image}}" /></td>
+        <td>
+            <span class="productName">{{name}}</span><br/><br/>
+            <span>{{desc}}</span>
+        </td>
+        <td><span class="price">${{price}}</span></td>
+        <td>
+            x {{qty}}
+        </td>
+    </tr>
+    {{/each}}
+    <tr>
+        <td>
+        </td>
+        <td><h2 style="text-align:right">YOUR TOTAL</h2></td>
+        <td>
+            <span class="price" style="font-size: 28px">${{cartTotal}}</span>
+        </td>
+        <td>
+        </td>
+    </tr>
+</table>
+
+{{#if payEnabled}}
+<button class="bigButton" onclick="window.location='/pay?hash=2e8405f30c23277909941604e77b0e880cb5794e';">
+<i class="fas fa-credit-card"></i> Pay Now (FREE)</button><p></p>
+{{else}}
+<button class="bigButton" disabled >
+<i class="fas fa-credit-card"></i> Pay Now</button>
+<p>Uh oh! Amazin's payment systems are currently down. Please come back in a month to complete your purchase. Note: FREE purchases can stll complete the checkout process.</p>
+{{/if}}
+
+<button class="bigButton" onclick="window.location='/?cart={{cartString}}';">
+<i class="fas fa-money-bill-alt"></i> Keep Shopping</button>
+<button class="bigButton" onclick="window.location='/';">
+<i class="fas fa-sad-tear"></i> Empty Cart</button>

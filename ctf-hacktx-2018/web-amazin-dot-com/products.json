@@ -1,0 +1,30 @@
+[
+    {
+        "id": "1",
+        "name": "William's Intern Lanyard",
+        "desc": "Straight from the depths of the Amazon workforce, with none of the actual labor! Get your GENUINE Amazon Lanyard today.",
+        "image": "lanyard.JPG",
+        "price": 9.99
+    },
+    {
+        "id": "2",
+        "name": "Vintage EGADS Sticker",
+        "desc": "Buy quickly before the Discord invite expires! Note: sticker costs do not count towards organization dues payments.",
+        "image": "egads.JPG",
+        "price": 19.99
+    },
+    {
+        "id": "3",
+        "name": "Unworn ACM Shirt",
+        "desc": "We're still not quite sure what ACM does, but their shirts are useful as whiteboard erasers.",
+        "image": "acm.JPG",
+        "price": 10.99
+    },
+    {
+        "id": "4",
+        "name": "Papa John Style Pizza Case",
+        "desc": "Better Skills, Better Jobs, Better Wages.",
+        "image": "papa.JPG",
+        "price": 4.99
+    }
+]

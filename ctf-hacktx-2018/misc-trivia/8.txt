@@ -1,0 +1,4 @@
+(HTTP - FINGER) * DNS + WHOIS + DAYTIME = ?
+(hint: they all talk over the network!)
+
+POP

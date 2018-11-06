@@ -1,0 +1,19 @@
+Title: Be Funged
+
+You're playing a game, and you discover this interesting pattern:
+- Start with a random positive whole number.
+    - If the number is even, divide by two.
+    - If the number is odd, multiply by three and add one.
+- Repeat the step above. Eventually, the number always reaches one!
+
+Write a Befunge program that reads in an integer from stdin, and prints the sequence of numbers following the Collatz conjecture, all the way till 1. For example, an input of 10 would print:
+
+10 5 16 8 4 2 1
+
+More Details:
+- The only external resource you can use is the Befunge documentation on Wikipedia (https://en.wikipedia.org/wiki/Befunge) as well as the interpreter here (https://www.bedroomlan.org/tools/befunge-playground#prog=hello,mode=edit). Please don't use the internet to look up code, as you might run into an implementation already made. This is on the honors system, but if we catch you you won't be happy :\
+- Your program must be less than 36 characters (INCLUDING whitespace). You can test the number of characters with the command "wc -c".
+- Don't worry about explicitly printing spaces between the numbers.
+- In order to submit your program, write it in a text file. Then, in the command line go to the directory and then type type:
+nc 172.31.5.209 7777 < solution.txt
+Where solution.txt is the name of the text file. This'll submit it to our server. (If you want some guidance, just talk to one of the officers). 

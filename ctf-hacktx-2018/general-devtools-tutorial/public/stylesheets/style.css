@@ -1,0 +1,48 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+  width: 600px;
+  display: inline-block;
+  text-align: justify;
+}
+
+img {
+  max-width: 1000px;
+}
+
+div.pageWrapper {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 2em;
+  text-align: center;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.code {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+img {
+  -webkit-box-shadow: 5px 3px 23px 4px rgba(0,0,0,0.28);
+  -moz-box-shadow: 5px 3px 23px 4px rgba(0,0,0,0.28);
+  box-shadow: 5px 3px 23px 4px rgba(0,0,0,0.28);
+
+  margin: 24px 0;
+}
+
+.task {
+  color: red;
+  font-weight: bold;
+}

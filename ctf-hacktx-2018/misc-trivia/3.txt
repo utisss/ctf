@@ -1,0 +1,3 @@
+This relatively recent security-oriented operating system attempts to prevent common attacks by running each process own isolated environment. What's it called?
+
+Qubes

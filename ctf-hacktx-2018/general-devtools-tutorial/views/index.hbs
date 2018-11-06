@@ -1,0 +1,107 @@
+<h1>{{title}}</h1>
+<h2>ISSS x HackTX 2018</h2>
+<p>In this tutorial challenge, we'll be guiding you through the basics of the Browser <strong>Developer Tools</strong>, or DevTools for short. DevTools exposes the underlying behavior of your browser as you browse the web, making it an excellent resource for investigating and reverse engineering webpages.</p>
+<p><i>Already familiar with DevTools? Too cool for a tutorial? Skip ahead to the </i><span class="task">Task</span> <i>sections for instructions on how to receive the flag for this challenge.</i></p>
+<hr />
+<p>Open up DevTools in your favorite browser (Firefox or Chrome preferred) by pressing <strong>F12</strong> on your keyboard. A panel should appear that looks like the following:</p>
+<img src="/images/devtools.png" />
+<p>First, we'll check out the <strong>Inspector</strong> (sometimes called Elements) tab. The Inspector tool reveals the website source code, written in HTML. Every website is made up of a tree of HTML components, each with a different meaning. Paragraphs <span class="code">&lt;p&gt;</span>, headers <span class="code">&lt;h1&gt;</span>, lists <span class="code">&lt;ul&gt;</span>, and input fields <span class="code">&lt;input&gt;</span> are a few of the many types of HTML tags you'll see.</p>
+<p>
+HTML elements can be customized using attributes. The button below
+</p>
+<div>
+<button class="myButton" id="theButton" disabled="">hi I am a button</button>
+</div>
+<p>
+is made up of this code: <span class="code">&lt;button class="myButton" id="theButton" disabled=""&gt;
+hi I am a button&lt;/button&gt;</span>
+</p>
+<p>
+You can examine an element on the page by right clicking it and selecting <strong>Inspect Element</strong>. This will focus the element inside the Inspector tool, where you can see its code.
+</p>
+
+<img src="/images/inspect.png" />
+<p>Here, we see that the button has a class <span class="code">myButton</span>, an id of <span class="code">theButton</span>, and is disabled via the attribute <span class="code">disabled=""</span>. You can read up about all the possible attributes of a <span class="code">button</span> using <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button">online resources like MDN</a> (Google "html button attributes").</p>
+<img src="/images/button.png" />
+
+<p>
+Because webpages are rendered client-side, you are free to modify the page's HTML in any way you see fit. This includes (and is not limited to) modifying element content, modifying element attributes, restyling elements, and adding or removing elements.
+</p>
+<p>
+<span class="task">Task #1: </span>Enable the button by removing the <span class="code">disabled=""</span> attribute entirely. Then click it to receive the first part of the flag!
+</p>
+<hr />
+<p>
+Next, we'll check out the <strong>Console</strong> and <strong>Debugger</strong> tabs. The Console is a space for you to execute JavaScript in the context of the page in a <a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop">Read-Eval-Print-Loop.</a> Here, you can evaluate arbitrary JavaScript expressions like <span class="code">1+1</span>, invoke JavaScript library functions like <span class="code">parseInt("1234")</span>, and run any other user-defined functions on the page. Try it out!
+</p>
+
+<img src="/images/console.png" />
+<p>
+JavaScript features C-like syntax, but is weakly typed and interpreted (not compiled). Variables (<span class="code">var x = "hello";</span>) and functions (<span class="code">var fun = function() { ... };</span>) can be declared through the console in the current scope of execution (typically the global scope). You can also redefine variables (<span class="code">x = "world";</span>) or invoke functions (<span class="code">var result = fun()</span>).
+</p>
+<p>
+The Debugger is a space for you to examine page scripts and debug code on the page by setting breakpoints and pausing execution. The file tree in the left column can be expanded to reveal page scripts.
+</p>
+<img src="/images/debug2.png" />
+<p>
+If you're familiar with debugging for other languages, the experience is largely the same. You can set breakpoints in code by clicking on line numbers, which pause execution when executed. When execution is paused, you can use the console to inspect and set variables before resuming execution. Reloading the page typically re-executes loaded scripts.
+</p>
+<p>
+<span class="task">Task #2: </span> Find the secret function loaded on the page and invoke it in the Console to get the second part of the flag!
+</p>
+
+<hr/>
+
+<p>Finally, we'll check out the <b>Network</b> tab. The Network tool lets you view all HTTP requests made by your browser during page load. Reload the page to get a complete capture of your browser's request history. (To avoid seeing cached results, use a force reload with Ctrl+Shift+R or check the "Disable cache" box in the upper right corner)</p> 
+<img src="/images/network.png" />
+
+<p>
+Every time your browser loads a page, it makes an HTTP request to gather all the page resources. These can include the page itself (written in HTML), stylesleets (written in CSS), images, and scripts. HTTP is a human readable text-based protocol on top of TCP, making it easy to craft custom requests.
+</p>
+<p>
+A raw HTTP request begins with an action (<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods">GET, POST, PUT, DELETE, etc.</a>) and a list of key-value pair headers, separated by newlines. An example is shown below:<br/><br/>
+<span class="code">
+GET / HTTP/1.1<br/>
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0<br/>
+Accept: text/html<br/>
+Accept-Language: en-US,en;q=0.5<br/>
+Accept-Encoding: gzip, deflate<br/>
+</span><br/>
+The server's HTTP response begins with a status code (<a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes">200 OK, 404 Not Found, etc.</a>), key-value pair headers, and finally the body of the response, containing the requested content. <br/><br/>
+<span class="code">
+HTTP/1.1 200 OK<br/>
+X-Powered-By: Express<br/>
+Content-Type: text/html; charset=utf-8<br/>
+Content-Length: 6157<br/>
+Date: Sat, 13 Oct 2018 21:07:44 GMT<br/>
+<br/>
+... content goes here ...
+</span><br/><br/>
+You can view the raw request headers and other details by clicking on each request.
+</p>
+<img src="/images/network_headers.png" />
+<p>
+A <b>Cookie</b> is a special kind of header that is exchanged between your browser and the server with every request. Cookies are provided by the server for identification (like an ID badge) and passed back to the server from the browser at every request (like scanning your badge at a door). This lets servers identify your browser and correctly serve pages uniquely tailored to your account.
+</p>
+<p>
+Because cookies are passed from the browser to the server, you are free to modify your browser's cookies by modifying your request headers. This means if you can get access to another user's cookies, you can log in as them! Several <a href="https://addons.mozilla.org/en-US/firefox/addon/edit-cookie/">browser extensions</a> are available for modifying your cookies on the fly. Alternatively, you can modify your raw request headers by sending a specially-crafted request (via command line or a tool like <a href="https://www.getpostman.com/">Postman</a>).
+</p>
+
+<p>
+<span class="task">Task #3: </span> Find the cookie passed from the server to retrive the third part of the flag.
+</p>
+<hr />
+
+<h2>Flag: <span class="task">Task #1</span> + <span class="task">Task #2</span> + <span class="task">Task #3</span></h2>
+<h3>Good luck!</h3>
+
+<script>
+theButton.onclick = function() {
+    if (theButton.disabled) {
+        return;
+    }
+
+    alert("utflag{d3v_t00ls");
+}
+</script>
+<script src="/scripts/secret.js"></script>

@@ -1,0 +1,2 @@
+1. The first bucket is public, so just download the file using the S3 CLI.
+2. This bucket has public list access but actually reading the files is restricted to EC2 instances in eu-west-3 (Paris).

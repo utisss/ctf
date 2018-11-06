@@ -1,0 +1,37 @@
+<p>Welcome to <strong>Amazin</strong> Dot Com! Founded in 2018, Amazin is your number one store for all your needs. Nothing beats our
+    prices. Our values include stalking our customers and never being wrong, ever. By insisting on above-average standards we hope to never lose your trust.</p>
+<p>Check out our products below! Each product is shipped straight from The Incubator to your doorstep using a Boosted Board (tm). Every purchase comes with a FREE flag (Amazin ELITE discount not applicable, shipping and handling not included).</p>
+<table class="products">
+    <tr>
+        <td>
+            Image
+        </td>
+        <td>
+            Name
+        </td>
+        <td>
+            Our Price
+        </td>
+    </tr>
+    {{#each products}}
+    <tr>
+        <td><img src="/images/{{image}}" /></td>
+        <td>
+            <span class="productName">{{name}}</span><br/><br/>
+            <span>{{desc}}</span>
+        </td>
+        <td><span class="price">${{price}}</span></td>
+        <td>
+            <form method="POST" action="/add?cart={{../cartString}}">
+                <input type="hidden" name="id" value="{{id}}" />
+                <button type="submit"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </form>
+        </td>
+    </tr>
+    {{/each}}
+</table>
+
+<button class="bigButton" 
+    {{#if checkoutEnabled}} onclick="window.location='/checkout?cart={{cartString}}';" {{/if}}
+    {{#unless checkoutEnabled}} disabled {{/unless}}>
+<i class="fas fa-shopping-cart"></i> Proceed to Checkout ({{cartQuantity}} Items)</button>

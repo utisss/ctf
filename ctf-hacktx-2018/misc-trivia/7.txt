@@ -1,0 +1,3 @@
+This method is used to protect from buffer overflows and other systems-level attacks, by detecting when data on the stack has been overwritten. What's it called?
+
+Stack canaries

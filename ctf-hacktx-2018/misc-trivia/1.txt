@@ -1,0 +1,3 @@
+Named after a certain multi-headed animal, this is one of the most common network mutual-authentication protocols deployed today. What's it called?
+
+Kerberos
