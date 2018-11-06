@@ -1,0 +1,11 @@
+After a particularly boring Valentine's day, you're looking for something to do - and you stumble across this strange little programming language called Befunge. It's quite strange, but its esoteric nature consumes you... and what comes next is lust: Lust for a working Befunge program.
+
+Write a Befunge program that prints out the first 10 powers of 3, from 3^0 (1) to 3^9 (19683).
+
+More Details:
+- Your program does not need to print any spaces between the numbers, so it'll be of the format:
+1......19683.
+- In order to submit your program, write it in a text file. Then, in the command line type:
+nc IP_ADDRESS 8888 < solution.txt
+Where solution.txt is the name of the text file. (If you want some guidance, just talk to one of the officers).
+- You can find some information about Befunge at https://en.wikipedia.org/wiki/Befunge. There's also an interpreter you can use at https://www.bedroomlan.org/tools/befunge-playground#prog=hello,mode=edit.
