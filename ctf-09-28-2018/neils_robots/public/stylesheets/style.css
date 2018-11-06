@@ -1,0 +1,16 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: cyan;
+}
+
+div.pageWrapper {
+  margin: 0 auto;
+  width: 600px;
+  padding: 2em;
+  text-align: center;
+}
+
+a {
+  color: #00B7FF;
+}
