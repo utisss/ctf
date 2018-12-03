@@ -1,0 +1,3 @@
+This encryption software, an alternative to Bitlocker, abruptly shut down a few years ago - so abruptly that some suspect that it was compromised by the NSA or another state actor. What's it called?
+
+Truecrypt

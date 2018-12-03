@@ -1,0 +1,137 @@
+/*
+Description:
+    Contains all the styles for the winning wheel page.
+    
+Verison History:
+    2012-01-28, Douglas McKechie
+    - Created based off earlier version.
+    
+    2015-09-26, Douglas McKechie
+    - Minor updates for the 2.0 winwheel example.
+*/
+
+body
+{
+    font-family: arial;
+    background-image: url("https://s3.amazonaws.com/twin-galaxies-www/assets/editorial/2018/04/fortnite-windows-xp-background-cuddle-team-leader.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Sets the background image for the wheel */
+td.the_wheel
+{
+    background-image: url(./wheel_back.png);
+    background-position: center;
+    background-repeat: none;
+}
+
+/* Do some css reset on selected elements */
+h1, p
+{
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+    font-size: 60px;
+    
+}
+
+div.power_controls
+{
+    margin-right:70px;
+}
+
+div.html5_logo
+{
+    margin-left:70px;
+}
+
+/* Styles for the power selection controls */
+table.power
+{
+    background-color: #cccccc;
+    cursor: pointer;
+    border:1px solid #333333;
+}
+
+table.power th
+{
+    background-color: white;
+    cursor: default;
+}
+
+td.pw1
+{
+    background-color: #6fe8f0;
+}
+
+td.pw2
+{
+    background-color: #86ef6f;
+}
+
+td.pw3
+{
+    background-color: #ef6f6f;
+}
+
+/* Style applied to the spin button once a power has been selected */
+.clickable
+{
+    cursor: pointer;
+}
+
+/* Other misc styles */
+.margin_bottom
+{
+    margin-bottom: 5px;
+}
+
+
+h1 {
+  font-weight: bold;
+  color: #fff;
+  font-size: 60px;
+  text-shadow: 2px 4px 3px rgba(0,0,0,10);
+}
+
+h2 {
+
+font-weight: bold;
+color: #fff;
+text-shadow: 2px 4px 3px rgba(0,0,0,10);
+text-decoration: underline;
+
+
+}
+
+h3 {
+  font-weight: bold;
+  color: #fff;
+  font-size: 15px;
+  line-height: 5px;
+  margin-left: -600px;
+  padding-top: -50px;
+}
+
+  h4 {
+  font-weight: bold;
+  color: #fff;
+  font-size: 15px;
+  line-height: 5px;
+  text-shadow: 2px 4px 3px rgba(0,0,0,10);
+
+}
+
+hr {
+
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 30em;
+  margin-right: 30em;
+  border-style: inset;
+  border-width: 5px;
+
+}
