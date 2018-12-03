@@ -1,0 +1,43 @@
+{{#if flag}}
+<h1>Your next utility bill: $ 921,252.91</h1>
+<h2 class="flag">{{flag}}</h2>
+{{/if}}
+<h1>{{title}}</h1>
+<h3>Welcome to your Honeymoat (tm) Remote Thermostat v2.0! Now more secure than ever.<br/><br/>
+    Using the Honeymoat (tm) Remote Thermostat 2.0, you can control your thermostat from the comfort of your own couch.</h3>
+
+<div class="thermostat">
+<div style="font-weight: bold; margin-bottom: 10px; margin-top: 10px;">{{date}}</div>
+
+<form action="/submit" method="POST" id="form">
+<span style="margin-right: 20px">SET TEMP</span><input id="temp" name="temp" type="number" value="{{temp}}" min="0" max="100" style="width: 50px" /> °F<br/>
+<button id="submit">Submit</button>
+</form>
+</div>
+
+<p>
+Note: Honeymoat (tm) is not responsible for surcharges and damages caused by extreme temperature choices.
+</p>
+
+<script>
+var temp = document.getElementById("temp");
+temp.addEventListener("change", function() {
+    temp.setAttribute("min", "0");
+    temp.setAttribute("max", "100");
+    var val = parseInt(temp.value, 10);
+    if (val < 0 || val > 100) {
+        temp.value = 72;
+    }
+});
+
+var submit = document.getElementById("submit");
+var form = document.getElementById("form");
+temp.addEventListener("submit", function() {
+    var val = parseInt(temp.value, 10);
+    if (val < 0 || val > 100) {
+        temp.value = 72;
+    } else {
+        form.submit();
+    }
+});
+</script>

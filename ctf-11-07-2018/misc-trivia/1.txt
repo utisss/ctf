@@ -1,0 +1,3 @@
+This security vulnerability affected many modern microprocessors, by taking advantage of the fact that processors "speculate", or execute read instructions ahead of time, by predicting execution branches without checking data access first. What's it called?
+Spectre
+

@@ -1,0 +1,16 @@
+<p>Welcome to Neil's Avacados! Neil's Avacados is your number one shop for buying qualiy premium grade avacados online. To gain access, please sign in with your exclusive <b>eight-digit</b> Neil's Avacados PIN number.</p>
+{{#if incorrect}}
+<p style="color: red; font-weight: bold">PIN incorrect.</p>
+{{/if}}
+<form action="/" method="POST" >
+<input id="pinid" type="text" name="pin" minLength="8" maxLength="8" required/>
+<button type="submit">Submit</button>
+</form>
+<br/>
+<br/>
+<p style="color: grey">
+<i>Neil's Note:</i> Some hackers recently broke into our webpage. That's why I've doubled the length of the PIN and taken away the site load time. Take that hackers!!!!
+</p>
+<script>
+pinid.focus();
+</script>

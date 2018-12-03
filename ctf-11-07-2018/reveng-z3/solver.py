@@ -1,0 +1,82 @@
+from z3 import *
+
+# Define variables
+s0 = Int('s[0]')
+s1 = Int('s[1]')
+s2 = Int('s[2]')
+s3 = Int('s[3]')
+s4 = Int('s[4]')
+s5 = Int('s[5]')
+s6 = Int('s[6]')
+s7 = Int('s[7]')
+s8 = Int('s[8]')
+s9 = Int('s[9]')
+s10 = Int('s[10]')
+s11 = Int('s[11]')
+s12 = Int('s[12]')
+s13 = Int('s[13]')
+s14 = Int('s[14]')
+
+solver = Solver()
+
+# Define digits as only being between 0-9
+solver.add(s0 >= 0)
+solver.add(s1 >= 0)
+solver.add(s2 >= 0)
+solver.add(s3 >= 0)
+solver.add(s4 >= 0)
+solver.add(s5 >= 0)
+solver.add(s6 >= 0)
+solver.add(s7 >= 0)
+solver.add(s8 >= 0)
+solver.add(s9 >= 0)
+solver.add(s10 >= 0)
+solver.add(s11 >= 0)
+solver.add(s12 >= 0)
+solver.add(s13 >= 0)
+solver.add(s14 >= 0)
+solver.add(s0 < 10)
+solver.add(s1 < 10)
+solver.add(s2 < 10)
+solver.add(s3 < 10)
+solver.add(s4 < 10)
+solver.add(s5 < 10)
+solver.add(s6 < 10)
+solver.add(s7 < 10)
+solver.add(s8 < 10)
+solver.add(s9 < 10)
+solver.add(s10 < 10)
+solver.add(s11 < 10)
+solver.add(s12 < 10)
+solver.add(s13 < 10)
+solver.add(s14 < 10)
+
+solver.add(s1 + s7 == 4)
+solver.add(s9 + s14 == 3)
+solver.add(s6 - s2 == 2)
+solver.add(s13 + s14 == 12)
+solver.add(s4 + s6 == 11)
+solver.add(s11 - s4 == 2)
+solver.add(s4 - s5 == 4)
+solver.add(s8 + s12 == 7)
+solver.add(s0 * s4 == 8)
+solver.add(s3 * s4 == 36)
+solver.add(s10 - s5 == 4)
+solver.add(s2 * s11 == 30)
+solver.add(s12 * s3 == 9)
+solver.add(s7 / s0 == 2)
+solver.add(s0 != 0)
+
+print("Solving...")
+print(solver.check())
+
+count = 0
+while solver.check() == sat:
+    m = solver.model()
+    if not m:
+        break
+    print(m)
+    count += 1
+    solver.add(Not(And([v() == m[v] for v in m])))
+print(count)
+

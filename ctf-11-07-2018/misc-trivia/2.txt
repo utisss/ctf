@@ -1,0 +1,3 @@
+This list of 10 (updated yearly) details the most common web application vulnerabilities and their fixes, and is a great place to start when trying to hack webapps. What's it called (3 words)?
+Owasp Top Ten
+

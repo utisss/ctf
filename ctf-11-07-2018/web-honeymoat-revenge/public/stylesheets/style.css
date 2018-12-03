@@ -1,0 +1,30 @@
+body {
+  padding: 100px 0 0 0;
+  margin: 0;
+  background-color: #ff0f00;
+  color: white;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.pageWrapper {
+  margin: 0 auto;
+  width: 600px;
+  padding: 2em;
+  text-align: center;
+}
+
+a {
+  color: #00B7FF;
+}
+
+div.thermostat {
+  background-color: white;
+  color: #666666;
+  padding: 20px;
+  font-size: 24px;
+}
+
+.flag {
+  text-transform: none;
+}

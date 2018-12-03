@@ -1,0 +1,4 @@
+This common defense against buffer overflow and ROP attacks works by randomizing the memory addresses of common parts of a program. What's it called (4 words, or 4 letter acronym)?
+ASLR
+Address Space Layout Randomization
+
