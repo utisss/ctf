@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Guess the flag</title>
+        <script>
+            function xe(a, i) {
+                return eval(a.map(v => v ^ i)
+                        .map(cc => String.fromCharCode(cc))
+                        .join(''))
+            }
+            function ce(s, i) {
+                const a = 'a'.charCodeAt(0);
+                const z = 'z'.charCodeAt(0);
+                const zero = '0'.charCodeAt(0);
+                const nine = '9'.charCodeAt(0);
+                return eval(
+                    s.split('')
+                        .map(c => c.charCodeAt(0))
+                        .map(cc => cc >= a && cc <= z? (cc - a + 26 + i) % 26 + a : cc)
+                        .map(cc => cc >= zero && cc <= nine? (cc - zero + 30 + i) % 10 + zero: cc)
+                        .map(cc => String.fromCharCode(cc))
+                        .join('')
+                );
+            }
+        </script>
+        <script src="code.js"></script>
+        <script>
+            function handleSubmit() {
+                window.flag = document.getElementById('flag_guess').value;
+
+                if(eval(code)) {
+                    alert("You got the flag!");
+                }else{
+                    alert("Try again!");
+                }
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <image src="logo.png"></image>
+        <h1>Guess the flag!</h1>
+        <form onsubmit="return handleSubmit()">
+            <input id="flag_guess" placeholder="Guess flag"><br><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>

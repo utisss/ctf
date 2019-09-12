@@ -1,0 +1,7 @@
+# This is our super secure protection against the evil crawling robots!
+
+User-agent: *
+Disallow: *
+
+User-agent: hackers
+Disallow: /titanictreasure

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Guess the flag</title>
+        <script>
+            function handleSubmit() {
+                const flag = document.getElementById("flag_guess").value;
+                
+                if(btoa(flag) === "dXRmbGFne2dvX2hvbWVfanNfdXJfZHJ1bmt9") {
+                    alert("You got the flag!");
+                }else{
+                    alert("Try again!");
+                }
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <image src="logo.png"></image>
+        <h1>Guess the flag!</h1>
+        <form onsubmit="return handleSubmit()">
+        <input id="flag_guess" placeholder="Guess flag">
+        <input type="submit">
+        </form>
+    </body>
+</html>
