@@ -21,4 +21,4 @@ if(btoa(flag) === "dXRmbGFne2dvX2hvbWVfanNfdXJfZHJ1bmt9") {
 ```
 It seems to be processing the user's flag guess and comparing it to some processed flag. Searching for btoa online tells us that btoa is used to encode a string in base64. 
 
-We can decide the base64-encoded string "dXRmbGFne2dvX2hvbWVfanNfdXJfZHJ1bmt9" to obtain the flag. This can be done using JavaScript's atob function or an online tool. 
+We can decode the base64-encoded string "dXRmbGFne2dvX2hvbWVfanNfdXJfZHJ1bmt9" to obtain the flag. This can be done using JavaScript's atob function or an online tool. 
