@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<link href="https://fonts.googleapis.com/css?family=Manjari&amp;display=swap" rel="stylesheet">
+		<link href="/static/style.css" rel="stylesheet">
+		<title>bopeyes Fryer Controls</title>
+	</head>
+	<body>
+		<img src="/static/logo.png" width=600px>
+		<br><br><br>
+		<h1>bopeyes Deep Fryer Remote Management</h1>
+		<p>Set your desired temperature below, between <i>100°F to 400°F</i>, and click <i>set</i>.</p>
+		<form method="post">
+			<div class="slidecontainer">
+				<input name="temp" type="range" min="100" max="400" value="{{temp}}" class="slider" id="s1">
+				<br><br>
+				<span>Temperature: </span>
+				<span id="d1" style="font-weight:bold;">{{temp}}</span>
+				<span>°F</span>
+				<script>
+					var slider = document.getElementById("s1")
+					var display = document.getElementById("d1")
+
+					slider.oninput = function() {
+						display.innerHTML = this.value;
+					}
+				</script>
+			</div>
+			<input type="submit" value="Set" style="font-size: 22px;">
+		</form>
+		<p id="resp" style="font-weight:bold;">{{ resp  }}</p>
+	</body>
+</html>
