@@ -1,0 +1,1 @@
+Again, you have received a love letter, but this secret admirer is more advanced than the last one. Not only did they use a bunch of compression schemes, but they also used Base64 encoding, and used an (albeit very basic) algorithm to encrypt the original message before compressing it. At this point, why did they write a letter at all?

@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Sign in</title>
+    <script src="key.js"></script>
+    <script>
+        function strToInt(str) {
+            return BigInt('0x' + str.split('').map(c => c.charCodeAt(0).toString(16)).join(''));
+        }
+
+        function encrypt(key, msg) {
+            var encrypted = 1n;
+            const n = key.p * key.q;
+            for(var i = 0; i < key.e; i++){
+                encrypted *= msg;
+                encrypted %= n;
+            }
+            return encrypted;
+        }
+
+        function handleSubmit() {
+            document.getElementById("err_msg").textContent = "";
+            var pass = document.getElementById("password").value;
+            var encryptedPass = 5191392730909286350250038473013035384603491018673993735349731942128059144008361452099488046602236377140427716578974803126901496816070784370446804255321133114657831526926246271460423353623051886921113903161284561139116188969909398529784845632434954521827853884544726830644348888983540520463419580346002618093016885697283749494947590923051361399101744381152527153152853363300174019531234274828407548311633652292160138013883162812491516901811479217533472269657209241222483520118287308587835441922226282312037n;
+            if(encrypt(key, strToInt(pass)) !== encryptedPass) {
+                document.getElementById("err_msg").textContent = "Your password is wrong!";
+                return false;
+            }
+            alert("Congrats! The flag is " + pass);
+        }
+    </script>
+</head>
+<body>
+    <image src="logo.png" width="300"></image>
+    <h1>Sign in</h1>
+    <p>Please type in the super secret admin password.</p>
+    <form onsubmit="return handleSubmit();">
+        <input id="password" placeholder="Password"></input><br />
+        <div id="err_msg"></div>
+        <input type="submit"></input>
+    </form>
+</body>
+</html>
