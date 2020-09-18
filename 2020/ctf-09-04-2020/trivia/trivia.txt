@@ -1,0 +1,11 @@
+This vulnerability, released in 2018, leverages modern processors' ability to speculatively execute instructions by observing possible side effects caused by a branch misprediction. This vulnerability can be triggered within a browser, affects nearly all computer systems in use, and was released alongside Meltdown.
+Answer: Spectre
+
+The \_\_\_\_\_\_\_\_\_\_\_\_ of China limits access to foreign media within the China mainland, in addition to blocking foreign websites such as Google, Facebook, Twitter, Youtube, and Wikipedia, among others. The system uses technologies such as deep packet inspection, TCP reset attacks, and DNS spoofing to selectively block access to websites. 
+Answer: Great Firewall
+
+This model of computer architecture limits itself to a small number of highly-optimized instructions in order to optimize performance to almost 1 instruction per cycle. It includes architectures such as MIPS, SPARC, and ARM.
+Answer: RISC
+
+This whistleblower released top secret information from the NSA in 2013, exposing several surveilance programs run by the agency and prompting a nationwide discussion on data privacy. He is currently living in Russia under asylum.
+Answer: Edward Snowden

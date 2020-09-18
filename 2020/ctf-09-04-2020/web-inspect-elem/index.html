@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>What's the flag?</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script>
+            function onSubmit() {
+                const guess = document.getElementById("guess").value;
+                if(guess === eval(getComputedStyle(document.getElementById("pog")).getPropertyValue("font-family"))) {
+                    alert("congrats!");
+                }
+
+                alert("try again!");
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Hello.</h1>
+        <div id="pog">What's the flag?</div><br>
+        <form onsubmit="return onSubmit()">
+            <input id="guess" placeholder="flag">
+            <input type="submit">
+        </form>
+    </body>
+</html>

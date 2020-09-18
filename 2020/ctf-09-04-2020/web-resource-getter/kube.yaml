@@ -1,0 +1,45 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: $PROB_NAME
+  labels:
+    app: $PROB_NAME
+spec:
+  ports:
+    - port: $PORT
+      name: $PROB_NAME
+      targetPort: 80
+  selector:
+    app: $PROB_NAME
+    tier: $PROB_TYPE
+  type: LoadBalancer
+---
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: $PROB_NAME
+  labels:
+    app: $PROB_NAME
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: $PROB_NAME
+      tier: $PROB_TYPE
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: $PROB_NAME
+        tier: $PROB_TYPE
+    spec:
+      containers:
+      - image: $PROB_NAME:latest
+        imagePullPolicy: Never
+        name: $PROB_NAME
+        ports:
+        - containerPort: 80
+          name: $PROB_NAME
+        securityContext:
+          readOnlyRootFilesystem: true
