@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  pwn-overflow:
+    build:
+      context: .
+      args: 
+        FLAG: "utflag{cool_string_l0l}"
+        USER: "overflow"
+    deploy:
+      replicas: 1
+    ports:
+      - "9002:9000"
+    read_only: true
