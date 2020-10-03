@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  to_jwt_or_not_to_jwt:
+    build:
+      context: .
+      args:
+        APP_USER: "appuser"
+        FLAG: "d0nt_trust_JWT_hEad3rs"
+        REDACTED_FLAG: "****************"
+        PORT: "3000"
+        BIN_NAME: "to_jwt_or_not_to_jwt"
+    ports:
+      - "5422:3000"
+    read_only: true

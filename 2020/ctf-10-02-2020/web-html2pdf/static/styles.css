@@ -1,0 +1,21 @@
+html, body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+* {
+  font-family: "Courier New", Courier;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+

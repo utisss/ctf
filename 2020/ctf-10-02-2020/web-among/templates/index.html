@@ -1,0 +1,28 @@
+<!doctype html>
+<title> Among Us </title>
+<style>
+body {
+	background-color:aliceBlue;
+}
+</style>
+<body>
+
+	<h1> Have some images </h1>
+
+	{% for img_path in imgs %}
+		<img src="/img/{{img_path}}" />
+	{% endfor %}
+
+	<h1> Upload your own </h1>
+	
+	<form action="/upload" method="post" enctype="multipart/form-data">
+		Upload png plz: <input type="file" name="file"/>
+		</br><input type="submit" value="Upload"/>
+	</form>
+
+	<h1> <a href="/exec/predict.py"> Among us predictor </a></h1>
+
+	<h1> I think I left some configs files around <a style="display: none" href="main.py">somewhere </a></h1>
+
+
+</body

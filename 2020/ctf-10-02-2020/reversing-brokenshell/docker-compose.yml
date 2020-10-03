@@ -1,0 +1,7 @@
+version: "3"
+services:
+  brokenshell:
+    build: .
+    ports:
+      - "38841:31337"
+    restart: always
