@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  pwn-echo2:
+    build:
+      context: .
+      args: 
+        FLAG: "utflag{l1king_things_1s_CRINGE}"
+        USER: "echo2"
+    deploy:
+      replicas: 1
+    ports:
+      - "8001:9000"
+    read_only: true

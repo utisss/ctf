@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  pwn-echo:
+    build:
+      context: .
+      args: 
+        FLAG: "utflag{ech0_flAg_idk........}"
+        USER: "echo"
+    deploy:
+      replicas: 1
+    ports:
+      - "8000:9000"
+    read_only: true

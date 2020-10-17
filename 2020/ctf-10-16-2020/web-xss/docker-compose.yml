@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+    web:
+        build: ./services/web
+        ports:
+            - 5006:5006
+        env_file:
+            - ./.env

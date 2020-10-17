@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  pwn-rop:
+    build:
+      context: .
+      args: 
+        FLAG: "utflag{this_is_a_flag}"
+        USER: "rop"
+    deploy:
+      replicas: 1
+    ports:
+      - "9002:9000"
+    read_only: true
+    

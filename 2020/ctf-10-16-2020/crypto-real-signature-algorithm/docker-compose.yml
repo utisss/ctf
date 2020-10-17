@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  real_signature_algorithm:
+    build:
+      context: .
+      args:
+        FLAG: "utflag{dont_r0ll_your_own_crypt0}"
+        READ_TIMEOUT: "300"
+        APP_USER: "appuser"
+        LISTEN_PORT: "3000"
+        BIN_NAME: "real_signature_algorithm"
+        BITS: "4096"
+        SIGN_TRIES: "2"
+        VERIFY_TRIES: "1"
+    deploy:
+      replicas: 1
+    ports:
+      - "5423:3000"
+    read_only: true
