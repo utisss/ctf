@@ -41,9 +41,8 @@ def encrypt(deck, plain):
 
 def keystream(deck):
     a_loc = deck.index('A')
-    b_loc = deck.index('B')
-
     deck = shift(deck, a_loc, 1)
+    b_loc = deck.index('B')
     deck = shift(deck, b_loc, 2)
 
     a_loc = deck.index('A')
