@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  pwn-got:
+    build:
+      context: .
+      args: 
+        FLAG: "utflag{n1c3_gAdg3ts_br0}"
+        USER: "srop"
+    deploy:
+      replicas: 1
+    ports:
+      - "8000:9000"
+    read_only: true

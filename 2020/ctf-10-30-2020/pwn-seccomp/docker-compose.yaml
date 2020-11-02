@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  pwn-seccomp:
+    build:
+      context: .
+      args: 
+        FLAG: "utflag{s3ccomp_2_ez}"
+        USER: "seccomp"
+    deploy:
+      replicas: 1
+    ports:
+      - "1337:9000"
+    read_only: true
