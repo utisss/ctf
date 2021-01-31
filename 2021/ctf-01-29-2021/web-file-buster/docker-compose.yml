@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+  web-buster:
+    build:
+      context: .
+    deploy:
+      replicas: 1
+    ports:
+      - "8780:80"

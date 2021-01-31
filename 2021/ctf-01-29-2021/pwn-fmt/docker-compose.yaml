@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  pwn-rop:
+    build:
+      context: .
+      args: 
+        FLAG: "utflag{GME_TO_THE_MOON!!!!!!!}"
+        USER: "fmt"
+    deploy:
+      replicas: 1
+    ports:
+      - "8001:9000"
+    read_only: true
+    

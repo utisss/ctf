@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  rev-connect-4:
+    build:
+      context: .
+      args: 
+        USER: "shell"
+    deploy:
+      replicas: 1
+    ports:
+      - "9010:9000"
+    read_only: true
+    

@@ -1,0 +1,19 @@
+<html>
+  <head> <link rel="stylesheet" href="/static/styles.css">
+    <title>Robot HQ 2.0</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.0/socket.io.js"></script>
+    <script type="text/javascript" charset="utf-8">
+    var socket = io();
+    socket.on('connect', function() {
+      socket.emit('get_flag', {passwd: 'boop-beep'});
+    });
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Welcome to the Robot HQ 2.0!</h1>
+      <img src="/static/robot.png">
+      <p>*If you listen carefully, you can hear some robots talking*</p> 
+    </div>
+  </body>
+</html>

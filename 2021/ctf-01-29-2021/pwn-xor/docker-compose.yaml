@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  pwn-xor:
+    build:
+      context: .
+      args: 
+        FLAG: "utflag{something_as_a_service_jokes_are_still_funny_right}"
+        USER: "xor"
+    deploy:
+      replicas: 1
+    ports:
+      - "5000:9000"
+    read_only: true

@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Flag Checker</title>
+        <script src="flagCheck.js"></script>
+        <script>
+            function handleSubmit() {
+                if(checkFlag(document.getElementById("flag").value)) {
+                    document.getElementById("output").textContent = "Congratulations! You got the flag!";
+                }else{
+                    document.getElementById("output").textContent = "Try again!";
+                }
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Flag Checker</h1>
+        <form onsubmit="return handleSubmit()">
+            <label for="flag">Guess the flag: </label>
+            <input id="flag">
+            <input type="submit">
+        </form>
+        <div id="output"></div>
+    </body>
+    
+</html>

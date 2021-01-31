@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  pwn-shell:
+    build:
+      context: .
+      args: 
+        FLAG: "utflag{oops_im_bad92053}"
+        USER: "shell"
+    deploy:
+      replicas: 1
+    ports:
+      - "5001:9000"
+    read_only: true
