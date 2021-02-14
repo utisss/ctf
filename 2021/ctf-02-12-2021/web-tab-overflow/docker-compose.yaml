@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  web-tab-overflow:
+    build:
+      context: .
+    deploy:
+      replicas: 1
+    ports:
+      - "5001:80"

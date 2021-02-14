@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  pwn-exfiltrate:
+    build:
+      context: .
+      args: 
+        FLAG: "utflag{gotta_get_my_data_out_of_there98448}"
+        USER: "exfiltrate"
+    deploy:
+      replicas: 1
+    ports:
+      - "5000:9000"
+    read_only: true

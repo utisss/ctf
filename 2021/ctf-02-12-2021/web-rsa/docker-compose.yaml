@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  web-rsa:
+    build:
+      context: .
+    deploy:
+      replicas: 1
+    ports:
+      - "9004:80"

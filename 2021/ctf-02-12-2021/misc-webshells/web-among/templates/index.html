@@ -1,0 +1,26 @@
+<!doctype html>
+<title> Stonks go up.com </title>
+<style>
+body {
+	background-color:aliceBlue;
+}
+</style>
+
+<script>
+	fetch("stonks/python getstonk.py")
+		.then(x => x.text())
+		.then(data => document.getElementById("stocks").innerHTML = data);
+</script>
+<body>
+
+	<h1> Stonks go up </h1>
+
+	<img src="/imgs/index.jpg" >
+	<p id="stocks">
+	Currently stocks are up by 100 points.
+	</p>
+	<p>Buy the dip</p>
+	<p>Short the VIX </p>
+	<p>Fuck bitcoin</p>
+
+</body>

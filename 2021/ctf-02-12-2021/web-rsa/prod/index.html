@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Sign in</title>
+    <script src="key.js"></script>
+    <script>
+        function strToInt(str) {
+            return BigInt('0x' + str.split('').map(c => c.charCodeAt(0).toString(16)).join(''));
+        }
+
+        function encrypt(key, msg) {
+            var encrypted = 1n;
+            const n = key.p * key.q;
+            for(var i = 0; i < key.e; i++){
+                encrypted *= msg;
+                encrypted %= n;
+            }
+            return encrypted;
+        }
+
+        function handleSubmit() {
+            document.getElementById("err_msg").textContent = "";
+            var pass = document.getElementById("password").value;
+            var encryptedPass = 352148852985896204882288677429044133256355905985181407666524553387990156448729604121834213761717660665745301941382584928807344935179245023426107707593349874071972899149313560114940669931858536478348630411910291881189705331146653700941197023121343298758168545596948071312377267411436168739405270068288340969279823842758851296776177912449125n;
+            if(encrypt(key, strToInt(pass)) !== encryptedPass) {
+                document.getElementById("err_msg").textContent = "Your password is wrong!";
+                return false;
+            }
+            alert("Congrats! The flag is " + pass);
+        }
+    </script>
+</head>
+<body>
+    <h1>Sign in</h1>
+    <p>Please type in the super secret admin password.</p>
+    <form onsubmit="return handleSubmit();">
+        <input id="password" placeholder="Password"></input><br />
+        <div id="err_msg"></div>
+        <input type="submit"></input>
+    </form>
+</body>
+</html>
