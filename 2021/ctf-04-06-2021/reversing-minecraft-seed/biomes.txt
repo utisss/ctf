@@ -1,0 +1,12 @@
+(numbers are in block coordinates, not chunk coordinates)
+-230,-1820 Taiga Hills 
+-310,-220 Dark Forest Hills 
+660,410 Swamp
+-550,290 Swamp
+5640,-2250 Mushroom Fields
+-1056,704 Cold Ocean
+-1568,1072 Desert Hills
+-360,-2330 Mushroom Fields
+-2050,-1980 Frozen Ocean
+-4540,-5930 Ice Spikes
+-340,-2280 Mushroom Fields Shore

@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  web-name:
+    build:
+      context: .
+      args:
+        FLAG: "utflag{flag}"
+    deploy:
+      replicas: 1
+    ports:
+      - "9000:5000"
+    read_only: true

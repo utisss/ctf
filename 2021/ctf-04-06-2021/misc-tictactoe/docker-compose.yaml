@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  misc-tictactoe:
+    build:
+      context: .
+      args: 
+        FLAG: "unused"
+        USER: "exfiltrate"
+    ports:
+      - "7875:9000"
+    read_only: true

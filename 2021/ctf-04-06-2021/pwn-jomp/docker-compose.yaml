@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  pwn-jomp:
+    build:
+      context: .
+      args: 
+        FLAG: "utflag{jomp}"
+        USER: "jomp"
+    deploy:
+      replicas: 1
+    ports:
+      - "5679:9000"
+    read_only: true

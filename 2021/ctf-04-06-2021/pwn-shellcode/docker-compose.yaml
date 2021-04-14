@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  pwn-name:
+    build:
+      context: .
+      args: 
+        FLAG: "utflag{angry_b1rds_2_1s_pre77y_g00d_1_gue55}"
+        USER: "name"
+    deploy:
+      replicas: 1
+    ports:
+      - "9006:9000"
+    read_only: true

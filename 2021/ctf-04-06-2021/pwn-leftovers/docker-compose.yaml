@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  pwn-leftovers:
+    build:
+      context: .
+      args: 
+        FLAG: "utflag{should've_cleaned_up_after_myself}"
+        USER: "leftovers"
+    deploy:
+      replicas: 1
+    ports:
+      - "5678:9000"
+    read_only: true
