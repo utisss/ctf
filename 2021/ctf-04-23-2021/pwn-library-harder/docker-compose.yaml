@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  pwn-library-harder:
+    build:
+      context: .
+      args: 
+        FLAG: "utflag{libc.hacked.gotem}"
+        USER: "library-harder"
+    deploy:
+      replicas: 1
+    ports:
+      - "5680:9000"
+    read_only: true

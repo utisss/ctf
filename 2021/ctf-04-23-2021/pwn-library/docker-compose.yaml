@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  pwn-library:
+    build:
+      context: .
+      args: 
+        FLAG: "utflag{libc.hacked}"
+        USER: "library"
+    deploy:
+      replicas: 1
+    ports:
+      - "5679:9000"
+    read_only: true

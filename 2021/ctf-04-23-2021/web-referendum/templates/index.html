@@ -1,0 +1,57 @@
+<html>
+  <head> <link rel="stylesheet" href="/static/styles.css">
+    <title>Flag Referendum</title>
+    <script> 
+      function validateVote() {
+        var vote1 = parseInt(document.forms["vote"]["flag1"].value);
+        var vote2 = parseInt(document.forms["vote"]["flag2"].value);
+        var vote3 = parseInt(document.forms["vote"]["flag3"].value);
+        var vote4 = parseInt(document.forms["vote"]["flag4"].value);
+        var total = vote1+vote2+vote3+vote4;
+        if (total > 4) {
+          alert("You're only allowed to cast 4 votes!");
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Flag Referendum</h1>
+      <p>Welcome to our flag referendum! I think we all know which flag is going to win, but you can cast your vote anyways.
+         You get 4 votes that you can distribute however you like.</p>
+      <div>
+        {% if message %}
+          <p style="color:green">{{ message }}</p>
+        {% endif %}
+      </div>
+      <div>
+        <div style="display:inline-block">
+          <img src="/static/flag1.png" height="100px"/>
+          <p>Votes for Flag 1: {{ votes[0] }}</p>
+        </div>
+        <div style="display:inline-block">
+          <img src="/static/flag2.png" height="100px"/>
+          <p>Votes for Flag 2: {{ votes[1] }}</p>
+        </div>
+        <div style="display:inline-block">
+          <img src="/static/flag3.png" height="100px"/>
+          <p>Votes for Flag 3: {{ votes[2] }}</p>
+        </div>
+        <div style="display:inline-block">
+          <img src="/static/flag4.jpeg" height="100px"/>
+          <p>Votes for Flag 4: {{ votes[3] }}</p>
+        </div>
+      </div>
+      <p>Cast your votes here:</p>
+      <form name="vote" action="/vote" method="POST" onsubmit="return validateVote()">
+        <input type="number" name="flag1" min="0" value="0"/>
+        <input type="number" name="flag2" min="0" value="0"/>
+        <input type="number" name="flag3" min="0" value="0"/>
+        <input type="number" name="flag4" min="0" value="0"/>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+  <head> <link rel="stylesheet" href="/static/styles.css">
+    <title>Suggest a Flag!</title>
+  </head>
+  <body>
+    <div>
+      <h1>Suggest a Flag!</h1>
+      <p>As part of our nation's new initiative, we're allowing citizens to suggest new flag designs.</p>
+      <p>Upload your design below for a chance to be immortalized!</p>
+      <form action="/upload" method="POST"
+         enctype="multipart/form-data">
+         <input type="file" name="file" accept=".png,.jpg,.jpeg"/>
+         <input type="submit"/>
+      </form>
+    </div>
+    <div>
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+          <p style="color:red">{{ message }}</p>
+        {% endfor %}
+      {% endif %}
+      {% endwith %}
+    </div>
+  </body>
+</html>
