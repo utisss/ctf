@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  pwn-simple:
+    build:
+      context: .
+      args: 
+        FLAG: "utflag{pwn_is_the_coolest_category}"
+        USER: "simple"
+    deploy:
+      replicas: 1
+    ports:
+      - "5000:9000"
+    read_only: true

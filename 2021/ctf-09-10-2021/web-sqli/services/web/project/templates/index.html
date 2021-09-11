@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>User lookup</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="static/images/icons/favicon.ico"/>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<!--===============================================================================================-->
+	<style>
+		form {
+			font-family: 'Poppins', sans-serif;
+			align-items: center; 
+			width: 500px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		input {
+			width: 100%;
+			height: 30px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		h1 {
+			text-align: center;
+			width: 100%;
+		}
+		img {
+			margin-left: 100px;
+			width: 300px;
+			height: 300px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-b-160 p-t-50">
+				<form class="databaseForm login100-form validate-form" action='/' method="post">
+					<img src="static/images/monopoly.png">
+
+					<h1>
+						Community Chest Lookup
+					</h1>
+					
+					<div class="wrap-input100 rs1 validate-input" data-validate = "Email is required">
+						<label for="email">Your friend's email: </label>
+						<input class="input100" placeholder="Email" type="text" name="email"><br>
+						<input type="submit">
+					</div>
+
+					
+					<span id="databaseResult"></span>
+					
+                </form>
+			</div>
+            
+		</div>
+	</div>
+    <script src="/static/js/databaseJS.js"></script>
+    </body>
+</html>

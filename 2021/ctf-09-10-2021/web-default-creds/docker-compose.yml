@@ -1,0 +1,11 @@
+version: "3"
+services:
+  open-ssh:
+    tty: false
+    networks: 
+    - default
+    ports:
+      - 8687:8080
+    build:
+      context: .
+      dockerfile: Dockerfile

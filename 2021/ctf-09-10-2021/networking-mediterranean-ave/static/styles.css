@@ -1,0 +1,25 @@
+html, body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+input {
+  width: 300px
+}
+
+* {
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+

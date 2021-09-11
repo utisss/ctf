@@ -1,0 +1,1 @@
+This crypto challenge is very simple, players just need to take a plaintext .txt with the flag enciphered in it using the vigenere cypher and then decrypt it using one of the available online decrypters. 

@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  web-inpickle:
+    build:
+      context: .
+    deploy:
+      replicas: 1
+    environment:
+      - ADMIN_PASSWD=5LVFWZDVRAVD4NRIOLMO7HMKXY
+      - FLAG=utflag{shoulda_used_flask-session}
+      - SECRET=U2KY9TOT5mAMCbGkGsl3TfLzM1Nx6/rRor81JKmUpp9JEghSlTxPSSStpRmI20B+8aKmizfE6WWI8Z+yiPFo9A==
+    ports:
+      - "8651:8000"
