@@ -1,0 +1,15 @@
+name: "A-fine Cipher Pt. 1"
+category: Crypto
+description: All the cool crypto ciphers use primes and stuff, but I found a _fine_ one that uses coprimes! Let's start off easy, shall we?
+  `k_1 = 5, k_2 = 7`
+  `dygkhl{rzeovpbt>>eovpbt}`
+
+  By Aya (@Aya the Awesome on discord)
+value: 101
+type: standard
+connection_info:
+flags:
+  - utflag{coprimes>>primes}
+files:
+  - 
+state: hidden

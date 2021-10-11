@@ -1,0 +1,35 @@
+Alice: hey bob, wanna learn RSA
+
+Bob: RSA is too hard, can we learn something easier
+
+Alice: yeah we can try ___ RSA, apparently its for learning RSA idk
+
+Bob: ok
+
+Bob: how does this work tho
+
+Alice: uh lemme generate the keys first
+
+Alice: ok try using this as the public key ___________________________
+
+Bob: aight
+
+Bob: so if i encrypt 69, i should get 72970812?
+
+
+Alice: yeah 
+
+Alice: and if u encrypt 420, then u should get 42262748.
+
+Bob: this hurts my brain :(
+
+Bob: i think i get it tho. can u try to decrypt this for me
+
+Bob: 2365203
+
+Alice: o is that your flag
+
+Bob: yeah but u gotta wrap it in utflag{}
+
+Alice: lmao ok
+

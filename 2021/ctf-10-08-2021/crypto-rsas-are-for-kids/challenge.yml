@@ -1,0 +1,15 @@
+name: "RSA is for kids"
+category: Crypto
+description: I just uncovered some ancient conversations between Alice and Bob, when they were kids. Some of the text got lost, but it should be fine right?
+
+I think they were trying to learn RSA, but real RSA was too hard for them. Since they were kids, I think they were using something called baby RSA? Or wait, no... I forgot.
+
+  By oops (@oops on discord)
+value: 500
+type: standard
+connection_info:
+flags:
+  - utflag{1526326}
+files:
+  - "conversation.txt`" 
+state: hidden

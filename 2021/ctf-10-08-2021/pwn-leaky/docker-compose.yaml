@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  pwn-leaky:
+    build:
+      context: .
+      args: 
+        FLAG: "utflag{you_sunk_my_battleship1349}"
+        USER: "leaky"
+    deploy:
+      resources:
+        limits:
+          cpus: .1
+          memory: 150M
+    ports:
+      - "5500:9000"
+    read_only: true

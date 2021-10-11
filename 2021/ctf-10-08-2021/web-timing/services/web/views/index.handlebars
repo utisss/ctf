@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Admin Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="static/images/icons/favicon.ico"/>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<!--===============================================================================================-->
+	<style>
+		form {
+			font-family: 'Poppins', sans-serif;
+			align-items: center; 
+			width: 500px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		input {
+			width: 100%;
+			height: 30px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		h1 {
+			text-align: center;
+			width: 100%;
+		}
+		img {
+			width: 500px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-b-160 p-t-50">
+				<form class="databaseForm login100-form validate-form" action='/checkPassword' method="post">
+					<h1>
+						Admin Login
+					</h1>
+					
+					<div class="rs1">
+						<label for="email">Password (10 numeric characters): </label>
+						<input placeholder="Password" type="text" name="password"><br>
+						<input type="submit">
+					</div>
+
+					<div id="databaseResult"></div>
+					
+				</form>
+			</div>
+            
+		</div>
+	</div>
+    <script src="/static/js/databaseJS.js"></script>
+    </body>
+</html>

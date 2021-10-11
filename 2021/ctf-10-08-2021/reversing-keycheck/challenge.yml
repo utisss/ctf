@@ -1,0 +1,13 @@
+name: "Keycheck"
+category: Reversing
+description: No one will ever get to my software without a license key!
+
+
+  By Tristan (@trab on discord)
+value: 300
+type: standard
+connection_info: nc ctf.isss.io 5502
+flags:
+  - utflag{master_hacker_man3948}
+files:
+  - build/keycheck

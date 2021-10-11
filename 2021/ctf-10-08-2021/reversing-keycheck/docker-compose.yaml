@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  reversing-keycheck:
+    build:
+      context: .
+      args: 
+        FLAG: "utflag{master_hacker_man3948}"
+        USER: "keycheck"
+    deploy:
+      resources:
+        limits:
+          cpus: .1
+          memory: 150M
+    ports:
+      - "5502:9000"
+    read_only: true

@@ -1,0 +1,13 @@
+name: "Rot13?"
+category: Crypto
+description: 13 is a prime number, right?
+
+  By oops (@oops on discord)
+value: 100
+type: standard
+connection_info:
+flags:
+  - utflag{wait_im_supposed_to_mod?}
+files:
+  - "msg.dat" 
+state: hidden

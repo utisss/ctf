@@ -1,0 +1,13 @@
+name: "Salesman"
+category: Binary Exploitation
+description: Some computer science man said finding a path would be hard. 
+
+
+  By Tristan (@trab on discord)
+value: 600
+type: standard
+connection_info: nc ctf.isss.io 5501
+flags:
+  - utflag{get_got_get_got9813}
+files:
+  - build/salesman

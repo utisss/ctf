@@ -1,0 +1,15 @@
+name: "A-fine Cipher Pt. 2"
+category: Crypto
+description: I see that first one was too easy for you. Shall we make it a little more difficult then?
+  `k_1 = ?, k_2 = ?`
+  `irnlge{lkl_xjirw_nkjow_armll_whmara}`
+
+  By Aya (@Aya the Awesome on discord)
+value: 137
+type: standard
+connection_info:
+flags:
+  - utflag{lol_brute_force_still_exists}
+files:
+  - 
+state: hidden
