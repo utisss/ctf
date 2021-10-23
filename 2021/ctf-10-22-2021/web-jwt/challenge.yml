@@ -1,0 +1,10 @@
+name: "JWT 1"
+category: Web
+description: They said use JWT tokens and you'd be secure, right?
+
+--ggu
+value: 250
+type: standard
+connection_info: "http://ctf.isss.io:7173"
+flags:
+  - utflag{IM_DAVID_S_PUMPKINS_MAN}

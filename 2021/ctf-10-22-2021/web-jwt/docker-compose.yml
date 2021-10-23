@@ -1,0 +1,13 @@
+version: "3.3"
+services:
+  web-jwt:
+    build:
+      context: .
+    deploy:
+      resources:
+        limits:
+          cpus: ".1"
+          memory: 150M
+    ports:
+      - "7173:5000"
+    read_only: true

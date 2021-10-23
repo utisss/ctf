@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  pwn-malloc:
+    build:
+      context: .
+      args: 
+        FLAG: "utflag{heap_is_hard_tbh12489}"
+        USER: "malloc"
+    deploy:
+      resources:
+        limits:
+          cpus: .1
+          memory: 150M
+    ports:
+      - "5000:9000"
+    read_only: true

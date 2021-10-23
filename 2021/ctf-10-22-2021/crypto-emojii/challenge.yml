@@ -1,0 +1,20 @@
+name: "Spoopy EMOJIIs"
+category: Crypto
+description: 
+    Someone stole my super secret flag, and added something to each character to make it encoded with "EMOJII"!
+
+    I've heard of ASCII, but what's EMOJII?
+
+    👵👴👦👬👡👧👻👪👵🐵👴👟🐴👤👤👟🐱👦🐴🐰🐰👽
+
+    Oh by the way, he left a note saying his favorite number is 0x1f400, not sure what that means...
+
+  By oops (@oops on discord)
+value: 500
+type: standard
+connection_info:
+flags:
+  - utflag{ju5t_4dd_1f400}
+files:
+  - "" 
+state: hidden

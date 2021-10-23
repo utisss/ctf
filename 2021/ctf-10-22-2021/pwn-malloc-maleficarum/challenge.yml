@@ -1,0 +1,13 @@
+name: "Malloc Maleficarum"
+category: Binary Exploitation
+description: Spooky book
+
+
+  By Tristan (@Trab on discord)
+value: 650
+type: standard
+connection_info: nc ctf.isss.io 5000
+flags:
+  - utflag{heap_is_hard_tbh12489}
+files:
+  - build/malloc

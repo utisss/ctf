@@ -1,0 +1,14 @@
+name: RSA
+category: Cryptography
+description: I captured the following ciphertexts, each encrypted with RSA.
+
+I believe they represent the same message, but are encrypted with different public keys.
+
+--ggu
+value: 750
+type: standard
+flags:
+  - utflag{spoopy_spary_speletons_aaaaaaaaaaaaaaaaaa}
+files:
+  - ciphertexts.txt
+state: hidden

@@ -1,0 +1,13 @@
+name: "Spooky Scary MP3s"
+category: Forensics
+description: A scary skeleton man left me this file. Maybe you can find something hidden inside it?
+
+
+  By Tristan (@Trab on discord)
+value: 150
+type: standard
+flags:
+  - utflag{spooky_scary_flags!!}
+files:
+  - spooky.mp3
+state: hidden

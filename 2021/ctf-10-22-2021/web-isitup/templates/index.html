@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Is it up?</title>
+  </head>
+  <body>
+    <div>
+      <h1>Is it up?</h1>
+      <p>Does it seem like a host is down? Enter it here, and we'll check for you.</p>
+      <form method="POST">
+          <input name="url">
+          <input type="submit">
+      </form>
+      {% if content is defined %}
+        <code>{{content}}</code>
+      {% endif %}
+    </div>
+  </body>
+</html>

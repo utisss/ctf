@@ -1,0 +1,20 @@
+<html>
+  <head> <link rel="stylesheet" href="/static/styles.css">
+    <title>Frightening Front-End Experience</title>
+  </head>
+  <body>
+    <div>
+      <h1>The Frightening Front-End Experience</h1>
+      <p>You must be 18+ to experience the Frightening Front-End. Enter your age to continue.</p>
+      <div>
+        {% if message %}
+          <p style="color:green">{{ message }}</p>
+        {% endif %}
+      </div>
+      <form name="age-form" action="/age" method="POST">
+        <input type="number" name="age" min="0" max="17" value="0" style="color:black"/>
+        <button type="submit" style="color:black">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
