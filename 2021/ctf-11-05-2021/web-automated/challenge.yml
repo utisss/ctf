@@ -1,0 +1,10 @@
+name: "Baldi's Basics"
+category: Web
+description: Let's see if you can solve 500 math problems in a row!
+
+--ggu
+value: 500
+type: standard
+connection_info: http://ctf.isss.io:7132
+flags:
+  - utflag{wow_ur_so_g00d_at_math}

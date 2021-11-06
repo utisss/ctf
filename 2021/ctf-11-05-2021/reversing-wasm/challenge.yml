@@ -1,0 +1,11 @@
+name: Wasm
+category: Reversing
+description: "Wasm is the SFI of the future" -bovav
+
+--ggu
+value: 300
+type: standard
+connection_info: http://ctf.isss.io:7133
+flags:
+  - utflag{wasm_is_the_w0rst}
+state: hidden

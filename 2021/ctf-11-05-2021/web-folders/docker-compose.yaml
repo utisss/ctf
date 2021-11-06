@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  web-folders:
+    build:
+      context: .
+    deploy:
+      resources:
+        limits:
+          cpus: '.1'
+          memory: 150M
+    ports:
+      - "5503:80"

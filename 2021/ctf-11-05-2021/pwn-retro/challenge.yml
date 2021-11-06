@@ -1,0 +1,14 @@
+name: "Retro"
+category: Binary Exploitation
+description: Back in my day we didn't need ROP!
+
+
+  By Tristan (@trab on discord)
+value: 650
+type: standard
+connection_info: nc ctf.isss.io 5501
+flags:
+  - utflag{32_bit_calling_conventions_are_wack}
+files:
+  - build/retro
+state: hidden

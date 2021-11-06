@@ -1,0 +1,13 @@
+name: Random Flag Checker
+category: Reversing
+description:
+  My flag checker is too slow. Can you help me fix it?
+
+  By Daniel Parks (@danielp on discord)
+value: 550
+type: standard
+flags:
+  - utflag{party_tricks}
+files:
+  - flag_checker
+state: hidden

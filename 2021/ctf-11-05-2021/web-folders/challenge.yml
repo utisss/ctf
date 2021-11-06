@@ -1,0 +1,13 @@
+name: "Folders"
+category: Web
+description: Pick a folder, and folder
+
+  Please only modify your folder. The solution to this challenge does not involve modifying the folders of other participants.
+
+  By Tristan (@Trab on discord)
+value: 500
+type: standard
+connection_info: nc ctf.isss.io 5503
+flags:
+  - utflag{htaccessssssssss1824198489}
+state: hidden

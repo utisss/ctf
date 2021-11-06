@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  web-automated:
+    build:
+      context: .
+    deploy:
+      resources:
+        limits:
+          cpus: ".1"
+          memory: 150M
+    ports:
+      - "7132:5000"
+    read_only: true

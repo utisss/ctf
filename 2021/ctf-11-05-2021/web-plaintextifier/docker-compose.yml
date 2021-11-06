@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  web-plaintextifier:
+    build:
+      context: .
+    deploy:
+      replicas: 1
+    environment:
+      - FLAG=utflag{oopsnotthatsimple}
+    ports:
+      - "6418:6418"

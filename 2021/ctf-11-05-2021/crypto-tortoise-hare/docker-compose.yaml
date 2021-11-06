@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  crypto-hash-collision:
+    build:
+      context: .
+      args: 
+        FLAG: "utflag{big_hash_for_big_security}"
+        USER: "storage"
+    ports:
+      - "4371:9000"
+    read_only: true

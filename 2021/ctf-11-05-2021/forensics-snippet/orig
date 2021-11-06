@@ -1,0 +1,4 @@
+# CTF planning
+ - Snippet - gitlab forensics problem: utflag{git_under_the_hood}
+ - Pickle - python pickle exploitation: utflag{not_a_real_flag}
+ - Backup - borg forensics, then what??

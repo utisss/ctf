@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  pwn-retro:
+    build:
+      context: .
+      args: 
+        FLAG: "utflag{32_bit_calling_conventions_are_wack}"
+        USER: "retro"
+    deploy:
+      resources:
+        limits:
+          cpus: '.1'
+          memory: 150M
+    ports:
+      - "5501:9000"
+    read_only: true

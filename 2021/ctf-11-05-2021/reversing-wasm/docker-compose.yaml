@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  rev-wasm:
+    build:
+      context: .
+    deploy:
+      resources:
+        limits:
+          cpus: .1
+          memory: 150M
+    ports:
+      - "7133:80"
+    read_only: true

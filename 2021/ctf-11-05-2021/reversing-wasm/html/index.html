@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Flag Checker</title>
+        <script>
+            async function init() {
+                const response = await fetch('enc.wasm');
+                const bytes = await response.arrayBuffer();
+                const { instance } = await WebAssembly.instantiate(bytes);
+
+                window.instance = instance;
+            }
+
+            window.onload = init;
+            
+            function handleSubmit() {
+                const flag = document.querySelector("input[name='flag']").value;
+
+                (async() => {
+                    const {instance} = window;
+
+                    let res = [];
+                    for(let i = 0; i < flag.length; i++) {
+                        const char = flag.charCodeAt(i);
+                        res.push(await instance.exports.encrypt(char, 38774));
+                    }
+
+                    const expected = [7926150, 7887376, 7344540, 7577184, 7150670, 7383314, 8158794, 8003698, 7150670, 7848602, 7615958, 7073122, 7460862, 7848602, 7073122, 7887376, 7422088, 7305766, 7073122, 8003698, 5250744, 7809828, 7848602, 7887376, 8236342];
+                    
+                    if(expected.length == res.length && expected.every((v, i) => v == res[i])) {
+                        alert("Correct!");
+                    } else {
+                        alert("Incorrect!");
+                    }
+                })();
+
+                return false;
+            }
+        </script>
+    </head>
+
+    <body>
+        <form target="#" onsubmit="handleSubmit(); return false">
+            <input type="text" name="flag" placeholder="Flag" />
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+name: RSA
+category: Cryptography
+description: More RSA
+
+--ggu
+value: 750
+type: standard
+flags:
+  - utflag{int0_the_metaverse}
+files:
+  - rsa.txt
+state: hidden

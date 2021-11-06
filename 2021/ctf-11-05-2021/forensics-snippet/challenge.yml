@@ -1,0 +1,13 @@
+name: Snippet
+category: Forensics
+description:
+  I accidentally leaked a gitlab snippet, but it's ok because I edited it to remove all the sensitive info.
+
+  By Daniel Parks (@danielp on discord)
+    
+  https://gitlab.com/-/snippets/2194909
+value: 250
+type: standard
+flags:
+  - utflag{git_under_the_hood}
+state: hidden

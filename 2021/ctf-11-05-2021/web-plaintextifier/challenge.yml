@@ -1,0 +1,14 @@
+name: Plaintextifier
+category: Web
+description:
+  I made this cool utility website! It's so simple, there's like no attack surface. I bet you can't break it!
+
+  http://ctf.isss.io:6418
+
+
+  By Daniel Parks (@danielp on discord)
+value: 250
+type: standard
+flags:
+  - utflag{oopsnotthatsimple}
+state: hidden
