@@ -1,0 +1,14 @@
+name: "SCavenger Hunt"
+category: Forensics
+description: Can you find the flag? I have a partial snap of it, but something seems kinda weird. I could have sworn SnapChat strips off most of the metadata...
+
+
+  By Aya (@Aya the Awesome on discord)
+value: 200
+type: standard
+connection_info:
+flags:
+  - utflag{thats_so_meta}
+files:
+  - snap.jpg
+state: hidden

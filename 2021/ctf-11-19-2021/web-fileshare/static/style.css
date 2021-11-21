@@ -1,0 +1,36 @@
+body {
+	margin: 0;
+}
+#content {
+	margin: 8em;
+}
+.topbox {
+  width: 40vw;
+  background: lightgray;
+  padding: 20px;
+  margin: auto;
+  margin-top: 10vh;
+	text-align: center;
+}
+.topbox > form > input {
+  display: block;
+  width: 100%;
+  margin: 5px;
+}
+.topbox > * {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+#footer {
+	text-align: center;
+}
+.error {
+	color: red;
+	margin-left: 0;
+	transform: none;
+}
+textarea {
+  display: block;
+  width: 80%;
+  height: 35vh;
+}

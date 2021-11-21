@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+<center>
+	<h1>Files App</h1>
+	<ul class="files"></ul>
+	<script src="{{ url_for('static', filename='load.js') }}"></script>
+</center>
+{% endblock %}

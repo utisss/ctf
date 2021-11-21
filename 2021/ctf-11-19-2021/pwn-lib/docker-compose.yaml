@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  pwn-lib:
+    build:
+      context: .
+      args: 
+        FLAG: "utflag{ret2libc!123904}"
+        USER: "lib"
+    deploy:
+      resources:
+        limits:
+          cpus: '.1'
+          memory: 150M
+    ports:
+      - "5000:9000"
+    read_only: true

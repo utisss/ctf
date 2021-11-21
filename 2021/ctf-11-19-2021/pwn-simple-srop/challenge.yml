@@ -1,0 +1,14 @@
+name: "Simple SROP"
+category: Binary Exploitation
+description: This problem is not simple
+
+
+  By Tristan (@Trab on discord)
+value: 1000
+type: standard
+connection_info: nc ctf.isss.io 5502
+flags:
+  - utflag{this_is_almost_the_same_as_srop}
+files:
+  - build/simple
+state: hidden

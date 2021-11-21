@@ -1,0 +1,15 @@
+name: Forker (last time!)
+category: Reversing
+description: I've got this license checker binary, and it's being a real pain because it forks so much. Can you help me crack it?  
+  obligatory uwu
+
+  By Daniel Parks (@danielp on discord)
+value: 550
+type: standard
+flags:
+  - utflag{could_have_patched_the_binary_too}
+files:
+  - forker
+hints:
+  - This is a dynamic analysis problem. Static analysis is deliberately painful.
+state: hidden

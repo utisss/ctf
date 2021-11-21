@@ -1,0 +1,16 @@
+name: Fowkbowmb
+category: Reversing
+description: "My fwiend sent me this binarwy and told me it would eventually pwint out the flag. Unfortunately, it does something else too...
+  Note: this binary is an actual forkbomb! I've neutered it (it sets its own process limit to 1023) so you shouldn't be able to crash your own system, but be careful!
+  
+
+  By Daniel Parks (@danielp on discord)"
+value: 350
+type: standard
+flags:
+  - utflag{set_rip_lol}
+files:
+  - fowkbowmb
+hints:
+  - This is a dynamic analysis problem. Static analysis is deliberately painful.
+state: hidden

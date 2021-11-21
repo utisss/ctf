@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+    web:
+        build: ./services/web
+        deploy:
+            resources:
+                limits:
+                    cpus: '.1'
+                    memory: 150M
+        ports:
+            - 5006:5006
+        env_file:
+            - ./.env

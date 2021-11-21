@@ -1,0 +1,34 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Spectro"
+author: "ggu"
+category: "Forensics"
+description: "Can you take a look at this audio fille? There might be something odd with the frequencies.\n_by ggu"
+value: 250
+type: standard
+
+# Optional settings
+
+# Flags specify answers that your challenge use. You should generally provide at least one.
+# Can be removed if unused
+# Accepts strings or dictionaries of CTFd API data
+flags:
+    # A static case sensitive flag created with a dictionary
+    - {
+        type: "static",
+        content: "utflag{UwU_whats_this}",
+    }
+
+# The state of the challenge.
+# If the field is omitted, the challenge is visible by default.
+# If provided, the field can take one of two values: hidden, visible.
+state: hidden
+
+files:
+  - spectro.wav
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"

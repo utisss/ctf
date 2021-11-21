@@ -1,0 +1,14 @@
+name: "Xana's Xtension"
+category: Forensics
+description: Oh no! The evil AI Xana is preventing me from reading the flag! Can you help?
+
+
+  By Aya (@Aya the Awesome on discord)
+value: 150
+type: standard
+connection_info:
+flags:
+  - utflag{jeremy=elite_h@x0r}
+files:
+  - code_lyoko.txt
+state: hidden

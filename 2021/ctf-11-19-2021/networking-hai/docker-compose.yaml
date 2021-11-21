@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  pwn-got:
+    build:
+      context: .
+    deploy:
+      resources:
+        limits:
+          cpus: '.1'
+          memory: 150M
+    ports:
+      - "1232:5000"
+

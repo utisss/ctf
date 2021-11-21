@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  pwn-simple:
+    build:
+      context: .
+      args: 
+        FLAG: "utflag{this_is_almost_the_same_as_srop}"
+        USER: "simple"
+    deploy:
+      resources:
+        limits:
+          cpus: '.1'
+          memory: 150M
+    ports:
+      - "5502:9000"
+    read_only: true

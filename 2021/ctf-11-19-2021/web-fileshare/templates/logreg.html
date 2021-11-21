@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="topbox">
+	<h1>{{ desc }}</h1>
+	{% if error %}<span class="error">{{ error }}</span>{% endif %}
+	<form method="post">
+		<input name="username" type="text" placeholder="Username"> 
+		<input name="password" type="password" placeholder="Password">
+		<input type="submit">
+	</form>
+
+	<center><a href="{{ url_for('login_page') }}">Login</a>&nbsp;&#8226;&nbsp;<a href="{{ url_for('register_page') }}">Register</a><br><sub>Don't use real passwords here, they're stored in plain text lol</sub></center>
+</div>
+{% endblock %}

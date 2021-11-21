@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  pwn-got:
+    build:
+      context: .
+      args: 
+        FLAG: "utflag{uwu_whats_this1324939814}"
+        USER: "got"
+    deploy:
+      resources:
+        limits:
+          cpus: '.1'
+          memory: 150M
+    ports:
+      - "5001:9000"
+    read_only: true

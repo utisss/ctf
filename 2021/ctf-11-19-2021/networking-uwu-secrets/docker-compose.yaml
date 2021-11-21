@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  networking-decode-not-serve:
+    image: "chenhw2/dnsmasq"
+    privileged: true
+    volumes:
+        - ./hosts:/etc/hosts
+        - ./dnsmasq.conf:/etc/dnsmasq.d/dnsmasq.conf
+    ports:
+      - "4628:5353/tcp"
+      - "4628:5353/udp"

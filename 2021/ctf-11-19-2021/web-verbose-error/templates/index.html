@@ -1,0 +1,22 @@
+<html>
+  <head> <link rel="stylesheet" href="/static/styles.css">
+    <title>Senpai's Vegetables</title>
+  </head>
+  <body>
+    <div>
+      <h1>Senpai's Vegetable Page</h1>
+      {% if favVeg %}
+          <p>Right now, Senpai's favorite vegetable is: <b>{{ favVeg }}</b></p>
+      {% endif %}
+      <p>Choose Senpai's favorite vegetable!</p>
+      <form name="veg-form" action="/veg" method="POST">
+        <select name="veg" id="veg" style="width:200px">
+        {% for opt in options %}
+            <option value={{ opt }}>{{ opt }}</option>
+        {% endfor %}
+        </select>
+        <button type="submit" style="color:black">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

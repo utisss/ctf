@@ -1,0 +1,12 @@
+name: File Sharwing Serwvice
+category: Web
+description: I made a file sharing service! Now I can just send you urls to files, isn't this nice?
+  http://ctf.isss.io:8651?id=351020
+
+
+  By Daniel Parks (@danielp on discord)
+value: 300
+type: standard
+flags:
+  - utflag{no-access-control-lol}
+state: hidden

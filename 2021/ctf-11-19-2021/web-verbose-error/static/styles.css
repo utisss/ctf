@@ -1,0 +1,28 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+    background-color: white;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+* {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: black;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
