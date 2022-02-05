@@ -1,0 +1,16 @@
+name: "Tofu Machine"
+category: Reversing
+description: |
+  I'm trying to crack the DRM on my tofu machine (don't ask). Here's a snippet from the python code that I found in a dump of the firmware. Can you help me reverse it?
+
+  > Note: this was designed to work on Python 3.10. On earlier versions of Python, it _might_ work.
+
+  By Daniel Parks (@danielp on discord)
+author: Daniel Parks
+value: 700
+type: standard
+flags:
+  - utflag{this_problem_would_have_been_easier_to_write_if_coffee_beans_were_actual_beans}
+files:
+  - checker.py
+state: hidden

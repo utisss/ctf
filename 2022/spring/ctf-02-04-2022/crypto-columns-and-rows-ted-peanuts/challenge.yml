@@ -1,0 +1,40 @@
+name: "Columns and Rows-ted Peanuts"
+category: Crypto
+description: |
+  Recently my favorite activities include eating roasted peanuts and reading up on transposition ciphers. They're pretty cool! Think you can break this one?
+
+  HEUS}
+  LDN_I
+  FLOES
+  GH_RI
+  {ADAO
+  SVONN
+  UO_BP
+  A_ETT
+  TUDLO
+  |H |E |U |S |} |
+  |L |D |N |_ |I |
+  |F |L |O |E |S |
+  |G |H |_ |R |I |
+  |{ |A |D |A |O |
+  |S |V |O |N |N |
+  |U |O |_ |B |P |
+  |A |_ |E |T |T |
+  |T |U |D |L |O |
+
+
+  By Aya (@Aya the Awesome on discord)
+author: Aya
+value: 175
+type: standard
+connection_info: nc ctf.isss.io 12345
+flags:
+  - {
+    type: "static",
+    content: "utflag{should_have_done_double_transposition}",
+    data: "case_insensitive",
+  }
+hints:
+  - The key length is 9
+  - You know what the first part of the flag should look like. Do you see those letters along any row or column?
+state: hidden

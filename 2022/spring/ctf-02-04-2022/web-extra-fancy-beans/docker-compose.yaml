@@ -1,0 +1,12 @@
+version: "3.2"
+services:
+  web-extra-fancy-beans:
+    image: "trinitronx/python-simplehttpserver"
+    volumes:
+      - type: bind
+        source: ./www
+        target: /var/www
+        read_only: true
+    ports:
+      - "5823:8080/tcp"
+      - "5823:8080/udp"

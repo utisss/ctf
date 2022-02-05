@@ -1,0 +1,15 @@
+name: "Big Beans"
+category: Binary Exploitation
+description: I got too many beans for my pot. I hope it doesn't overflow
+
+
+  By Tristan (@trab on discord)
+author: Tristan
+value: 500
+type: standard
+connection_info: nc ctf.isss.io 5500
+flags:
+  - utflag{big_beans_bot_big_ban}
+files:
+  - build/big_beans
+state: hidden

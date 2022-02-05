@@ -1,0 +1,12 @@
+name: "Really BeAneD Cipher"
+category: Reversing
+description: Half reversing, half crypto. It's a really bad cipher, and it has nothing to do with beans, unfortunately.
+author: jyu
+value: 500
+type: standard
+flags:
+  - utflag{key_of_2_ez_brute}
+files:
+  - beancipher
+  - output.txt
+state: hidden

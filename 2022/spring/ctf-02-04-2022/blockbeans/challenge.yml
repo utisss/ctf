@@ -1,0 +1,15 @@
+name: "Blockbeans"
+category: Misc
+description: |
+  I hid my beans on the (ropsten)blockchain! 
+
+
+  0x075988c212995A119486699191f968D9Ca90272b
+
+  By Theo (@Raoul Duke#1954 on discord)
+author: Theo Morales
+value: 250
+type: standard
+flags:
+  - utflag{B1tc0in_T0_500_M1ll10N!!}
+state: hidden

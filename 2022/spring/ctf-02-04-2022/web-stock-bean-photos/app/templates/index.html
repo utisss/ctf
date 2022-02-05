@@ -1,0 +1,19 @@
+<html>
+  <head> <link rel="stylesheet" href="/static/styles.css">
+    <title>Bean Photos</title>
+  </head>
+  <body>
+    <div>
+      <h1>Stock Bean Photos</h1>
+      <p>Welcome to mattyp's Stock Bean Photos, your one-stop shop for uncropped pop legume image drops!</p>
+      <form name="download-form" action="/download" method="POST">
+        <select name="filename" id="filename" style="width:200px">
+        {% for opt in options %}
+            <option value={{ opt }}>{{ opt }}</option>
+        {% endfor %}
+        </select>
+        <button type="submit" style="color:black">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

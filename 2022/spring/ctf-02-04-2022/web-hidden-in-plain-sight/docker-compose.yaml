@@ -1,0 +1,13 @@
+version: "3"
+services:
+  web-hidden-in-plain-sight:
+    build:
+      context: .
+    deploy:
+      resources:
+        limits:
+          cpus: '.1'
+          memory: 150M
+    ports:
+      - "24239:80"
+    read_only: true

@@ -1,0 +1,16 @@
+version: "3"
+services:
+  pwn-big-beans:
+    build:
+      context: .
+      args: 
+        FLAG: "utflag{big_beans_bot_big_ban}"
+        USER: "big_beans"
+    deploy:
+      resources:
+        limits:
+          cpus: '.1'
+          memory: 150M
+    ports:
+      - "5500:9000"
+    read_only: true

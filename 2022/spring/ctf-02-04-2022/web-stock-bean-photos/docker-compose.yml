@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+  web-stock-bean-photos:
+    build: .
+    ports:
+      - 5239:5000

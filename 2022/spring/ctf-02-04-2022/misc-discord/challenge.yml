@@ -1,0 +1,15 @@
+name: "Discord"
+category: Misc
+description: |
+  My friend wouldn't share their hummus, so I sneaked onto their computer and copied over their Discord directory. Now what do I do with it?
+
+  By Daniel Parks (@danielp on discord)
+author: Daniel Parks
+value: 250
+type: standard
+flags:
+  - utflag{do_not_lose_your_token}
+  - utflag{ODk1Nzg1NTgzODMyNjAwNjA2.YfwMMw.8dqJUY8pqxgyAwivy9EtLJoB_9A}
+files:
+  - stolen.tar.zst
+state: hidden

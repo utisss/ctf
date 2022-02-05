@@ -1,0 +1,11 @@
+name: "Coffee Beans"
+category: Reversing
+description: coffe --ggu
+author: ggu
+value: 300
+type: standard
+flags:
+  - utflag{the_word_beans_totally_stopped_looking_like_a_word_just_now}
+files:
+  - Main.class
+state: hidden

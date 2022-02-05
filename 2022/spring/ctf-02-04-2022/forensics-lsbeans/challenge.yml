@@ -1,0 +1,14 @@
+name: "LSBeans"
+category: Forensics
+description: |
+  Wow! Legumes sure are colorful! I wonder how computers understand and display colors.
+
+  By Aly Abdulatif (Prince_Ali#9152)
+author: Aly Abdulatif
+value: 100
+type: standard
+flags:
+  - utflag{colors_hide_as_much_as_they_reveal}
+files:
+  - legumes.png
+state: hidden

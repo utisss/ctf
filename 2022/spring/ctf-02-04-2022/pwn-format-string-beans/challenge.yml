@@ -1,0 +1,12 @@
+name: "Format String Beans"
+category: Binary Exploitation
+description: My string beans are in a weird format. --ggu
+author: ggu
+value: 2
+type: standard
+connection_info: nc ctf.isss.io 9002
+flags:
+  - utflag{me_and_the_b0ys_at_2am_l00king_f0r_beans}
+files:
+  - pwnable
+state: hidden

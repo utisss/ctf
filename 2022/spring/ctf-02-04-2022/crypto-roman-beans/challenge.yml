@@ -1,0 +1,14 @@
+name: "Roman Beans"
+category: Crypto
+description: |
+  Chef Julius sent me the secret to his world famous recipe. Too bad I can't understand any of it. Maybe you'll have better luck :)
+
+  qpbhwc{ywaown_owhwzo_dwra_jk_hacqiao}
+
+  By Aly Abdulatif (Prince_Ali#9152)
+author: Aly Abdulatif
+value: 100
+type: standard
+flags:
+  - utflag{caesar_salads_have_no_legumes}
+state: hidden

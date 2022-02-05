@@ -1,0 +1,35 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Extra Fancy Beans"
+author: "mattyp"
+category: "Web"
+description: "I just put up my first website for my booming bean brand! And it's all thanks to my secret recipe...\n\n_by mattyp_"
+value: 100
+type: standard
+
+# Optional settings
+connection_info: "http://ctf.isss.io:5823/files/website/can-of-beans/beans.html"
+
+# Flags specify answers that your challenge use. You should generally provide at least one.
+# Can be removed if unused
+# Accepts strings or dictionaries of CTFd API data
+flags:
+    # A static case sensitive flag created with a dictionary
+    - {
+        type: "static",
+        content: "utflag{re_re_fried_is_my_legume_secret}",
+    }
+
+hints:
+    - "Sometimes you have to think outside the can of beans."
+
+# The state of the challenge.
+# If the field is omitted, the challenge is visible by default.
+# If provided, the field can take one of two values: hidden, visible.
+state: hidden
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"

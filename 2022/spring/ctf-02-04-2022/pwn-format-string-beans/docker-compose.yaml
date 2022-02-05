@@ -1,0 +1,16 @@
+version: "3.3"
+services:
+  pwn-printf:
+    build:
+      context: .
+      args: 
+        FLAG: "utflag{me_and_the_b0ys_at_2am_l00king_f0r_beans}"
+        USER: "printf"
+    deploy:
+      resources:
+        limits:
+          cpus: '.1'
+          memory: 150M
+    ports:
+      - "9002:9000"
+    read_only: true

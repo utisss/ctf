@@ -1,0 +1,13 @@
+name: "Hidden in Pea-lain Sight"
+category: Web
+description: I wanted to use CSS to make a website about how much I love legumes, but CSS is just so tricky to work with! I keep messing up and putting stuff in my website I don't mean to. I think it's fixed now. I don't see anything that shouldn't be there.
+
+
+  By Aya (@Aya the Awesome on discord)
+author: Aya
+value: 150
+type: standard
+connection_info: 'http://ctf.isss.io:24239'
+flags:
+  - utflag{lentils_are_the_best_legumes}
+state: hidden
