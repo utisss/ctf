@@ -1,0 +1,15 @@
+name: "©️"
+category: Forensics
+description: |
+  Theres a flag in this file, but I think it would violate copyright terms if we used it in a ctf..
+
+
+  By Theo (@Raoul Duke on discord)
+author: Theo
+type: standard
+value: 100
+files:
+  - copyright.png
+flags:
+  - utflag{f0r3ns1cs_2_ez}
+state: hidden

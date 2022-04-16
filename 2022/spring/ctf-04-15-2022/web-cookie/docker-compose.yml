@@ -1,0 +1,7 @@
+version: "3.7"
+
+services:
+  web-cookie:
+    build: .
+    ports:
+      - 9435:5000

@@ -1,0 +1,16 @@
+name: ":blureyes:"
+category: Forensics
+description: |
+  My friend sent me this picture of a QR code, but I can't scan it because they're a klutz. Can you help me?
+
+  Hint: As you edit the image, you might want to use more than one QR code scanner. Only zxing would work with my solution.
+
+  By Daniel Parks (@danielp on discord)
+author: Daniel Parks
+type: standard
+value: 300
+files:
+  - PXL_20220412_152920476.jpg
+flags:
+  - utflag{humans_are_better_at_error_correction_than_computers}
+state: hidden

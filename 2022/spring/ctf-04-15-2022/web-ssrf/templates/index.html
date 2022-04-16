@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Resource Getter</title>
+  </head>
+  <body>
+    <div>
+      <h1>Resource Getter</h1>
+      <p>Are you too lazy to follow links? Submit one here, and we'll follow it for you!</p>
+      <form method="POST">
+          <input name="url">
+          <input type="submit">
+      </form>
+      {% if content is defined %}
+        <code>{{content}}</code>
+      {% endif %}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+name: "🔑🎚"
+category: Web
+description: The password is 57295738.
+
+  By ggu (@ggu on discord)
+author: ggu
+value: 250
+type: standard
+connection_info: http://ctf.isss.io:7132
+flags:
+  - utflag{take_cs361s_with_hovav}
+state: hidden

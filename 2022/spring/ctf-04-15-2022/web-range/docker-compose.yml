@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  web-range-ggu:
+    build:
+      context: .
+    ports:
+      - "7132:5000"
+    env_file:
+      - ./.env
+    read_only: true

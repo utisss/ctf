@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  pwn-jailbreak:
+    build:
+      context: .
+      args: 
+        FLAG: "utflag{wee_woo_wee_woou9i325}"
+        USER: "jailbreak"
+    ports:
+      - "5000:9000"
+    read_only: true

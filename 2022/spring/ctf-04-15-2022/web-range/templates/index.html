@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Admin Login</title>
+  </head>
+  <body>
+    <div>
+      <h1>Admin Login</h1>
+
+      <form action="/login" method="post" oninput="passwordvalue.value = password.valueAsNumber">
+        <label for="password">Password:</label><br>
+        <input type="range" id="password" name="password" min="0" max="99999999"><output name="passwordvalue" for="password">50000000</output>
+        <input type="submit" value="Login">
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+name: "🗣🚫🤫🤐"
+category: Social Engineering
+description: |
+  Try to get one of the officers to say any of the words on this forbidden wordlist. If you do, they'll give you the flag.
+
+  If you're in person, you can likely find an officer at the front of the atrium or walking around between teams. If you're online, hop onto the voice channel and ping an @Officer that you want to talk :)
+
+  By Aya Abdelgawad (@Aya the Awesome on discord)
+author: Aya the Awesome
+type: standard
+value: 300
+files:
+  - forbidden.txt
+flags:
+  - utflag{gotcha!}
+state: hidden

@@ -1,0 +1,7 @@
+version: "3.7"
+
+services:
+  web-ssrf:
+    build: .
+    ports:
+      - 9436:9436

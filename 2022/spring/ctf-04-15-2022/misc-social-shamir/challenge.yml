@@ -1,0 +1,16 @@
+name: "Social Shamir Secret Sharing Scheme Simulator"
+category: Social Engineering
+description: |
+  This challenge is only available in person. Your team should receive one QR code encoding a piece of the flag, split apart using Shamir Secret Sharing.
+
+  To solve this challenge, you must introduce yourself to people on four other teams (officers also count!). Ask them for their name, year, major, hobbies, and favorite emoji. After you have gathered this information, exchange QR codes. 
+  
+  Once you have collected chunks from five of these QR codes, scan them and input them on passguardian.com to get the flag. 
+
+  By ggu (@ggu on discord)
+author: Garrett Gu
+type: standard
+value: 300
+flags:
+  - utflag{a83sj}
+state: hidden

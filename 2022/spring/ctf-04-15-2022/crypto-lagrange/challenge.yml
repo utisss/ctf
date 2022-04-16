@@ -1,0 +1,17 @@
+name: "🔢"
+category: Cryptography
+description: 
+  By ggu (@ggu on discord)
+author: ggu
+value: 600
+type: standard
+files:
+  - problem.py
+flags:
+  - utflag{doritos_and_fritos_eating_burritos_with_danny_devito}
+hints:
+  - Write out the encrypt function on paper and expand. What operation is being performed here?
+  - Given a polynomial of order n, how many points are needed to determine the polynomial? Remember you're working in a prime order field. 
+  - Suppose you're given two points on a line. How would you determine the equation of the line? What about a parabola given three points? What about a cubic equation given four points? 
+  - Lagrange Interpolation over a finite field
+state: hidden

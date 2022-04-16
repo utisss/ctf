@@ -1,0 +1,15 @@
+name: "😳👉👈"
+category: Forensics
+description: |
+  I found this on a command and control server belonging to the Equation Group. I think it might hold some state secrets..
+
+
+  By Theo (@Raoul Duke on discord)
+author: Theo
+type: standard
+value: 200
+files:
+  - grayfish-logo.png
+flags:
+  - utflag{m0d3rn_sh3rl0k_h01m3s}
+state: hidden
