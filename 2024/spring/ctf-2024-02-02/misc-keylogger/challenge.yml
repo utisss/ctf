@@ -1,0 +1,14 @@
+name: "Keylogger"
+category: Misc
+description: |
+  We have captured USB protocol data while a target employee types in his password. Can you decode the packets sent by his USB keyboard to identify the password?
+
+  By Aadhithya (@aadhi0319 on discord)
+author: Aadhithya (aadhi0319)
+value: 400
+type: standard
+flags:
+  - utflag{i_know_all_the_secretts}
+files:
+  - usb_capture.pcapng
+state: hidden
