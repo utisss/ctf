@@ -1,0 +1,13 @@
+name: "Flash"
+category: Forensics
+description: |
+  A flash drive was discovered with an interesting folder in it. However, there are no files in that folder. It is suspected that the contents of this folder were deleted. Can you recover the file using your forensics skills?
+
+  By Aadhithya (@aadhi0319)
+author: aadhi0319
+value: 200
+type: standard
+connection_info: https://utexas.box.com/s/ngtcy8iyrvwwbhmxri908urefvo00han
+flags:
+  - utflag{l3arn_4ll_th3_53cr3t$_w!th_for3n5ics}
+state: hidden
