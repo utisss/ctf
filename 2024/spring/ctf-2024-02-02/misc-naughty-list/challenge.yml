@@ -1,0 +1,15 @@
+name: "Naughty List"
+category: Misc
+description: |
+  I was originally intending to do this in December but ran out of time with finals and personal stuff. So have a Santa problem.
+
+  By Jonathan (@JBYoshi on discord)
+author: Jonathan (JBYoshi)
+value: 400
+type: standard
+connection_info: nc ctf.isss.io 5282
+flags:
+  - utflag{ho_ho_ho_no_no_no}
+files:
+  - src/main.py
+state: hidden

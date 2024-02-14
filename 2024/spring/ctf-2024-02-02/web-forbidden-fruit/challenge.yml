@@ -1,0 +1,13 @@
+name: "Forbidden Fruit"
+category: Web
+description: |
+  Nothing to see here, move along, these aren't the droids you're looking for.
+
+  By Jonathan (@JBYoshi on discord)
+author: Jonathan (JBYoshi)
+value: 200
+type: standard
+connection_info: http://ctf.isss.io:8577
+flags:
+  - utflag{taking_the_cant_out_of_cantaloupe}
+state: hidden

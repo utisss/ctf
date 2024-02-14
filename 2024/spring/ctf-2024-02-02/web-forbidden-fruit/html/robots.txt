@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /the_secret_cantaloupe_black_market.html
