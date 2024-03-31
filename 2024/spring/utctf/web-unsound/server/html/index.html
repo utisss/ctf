@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unsound Encryption</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #0056b3;
+  }
+
+  #encrypted, #decrypted {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 0px solid #ccc;
+    border-radius: 5px;
+    min-height: 50px;
+    background-color: #a4bcea4f;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div id="encrypted"></div>
+  <input type="text" id="encryptInput" placeholder="Enter text to encrypt">
+  <button class="btn" id="encryptBtn">Encrypt</button>
+  <br /><br /><br /><br />
+  <div id="decrypted"></div>
+  <input type="text" id="decryptInput" placeholder="Enter text to decrypt">
+  <button class="btn" id="decryptBtn">Decrypt</button>
+</div>
+
+<script type="module">
+  import init, { encrypt, decrypt} from "./wasm.js";
+
+  init().then(() => {
+    document.getElementById("encryptBtn").addEventListener("click", encryptText);
+    document.getElementById("decryptBtn").addEventListener("click", decryptText);
+
+    function encryptText() {
+      var inputText = document.getElementById("encryptInput").value;
+      if (inputText.trim() === "") {
+        alert("Please enter text to encrypt");
+        return;
+      }
+      fetch("/post", {
+        method: "POST",
+        headers: {
+          "Accept": "application/json",
+          "Content-Type": "application/text"
+        },
+        body: "encrypt=" + encodeURIComponent(inputText)
+      });
+      var encryptedText = encrypt(inputText);
+      document.getElementById("encryptInput").value = "";
+      document.getElementById("encrypted").innerHTML = encryptedText;
+    }
+
+    function decryptText() {
+      var inputText = document.getElementById("decryptInput").value;
+      if (inputText.trim() === "") {
+        alert("Please enter text to decrypt");
+        return;
+      }
+      fetch("/post", {
+        method: "POST",
+        headers: {
+          "Accept": "application/json",
+          "Content-Type": "application/text"
+        },
+        body: "decrypt=" + encodeURIComponent(inputText)
+      });
+      var status = decrypt(inputText);
+      document.getElementById("decryptInput").value = "";
+      status.replace("�", "");
+      const status_element = document.createElement("h1");
+      status_element.id = "status";
+      status_element.innerHTML = status;
+      document.getElementById("decrypted").appendChild(status_element);
+    }
+
+  });
+
+</script>
+</body>
+</html>
+

@@ -1,0 +1,14 @@
+version: "2.4"
+services:
+  web-unsound:
+    build:
+      context: .
+      args: 
+        USER: "node"
+    tty: true
+    cpus: .5
+    mem_limit: 300M
+    ports:
+      - "8374:9000"
+    read_only: false
+    restart: on-failure
