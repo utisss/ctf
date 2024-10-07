@@ -1,0 +1,16 @@
+name: "SHA-26"
+category: Cryptography
+description: |
+  I made a typo in my code. Hopefully this doesn't make it insecure.
+
+  author: sasha (kyrili on discord)
+author: sasha
+value: 300
+type: standard
+connection_info: nc ctf.isss.io 26256
+flags:
+  - 'utflag{h4ppy_b1rthd4y_4tt4ck}'
+# remove the files key entirely if the challenge should contain no files
+files:
+  - hash.py
+state: hidden

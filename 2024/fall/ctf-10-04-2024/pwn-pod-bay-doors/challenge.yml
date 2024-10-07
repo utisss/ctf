@@ -1,0 +1,16 @@
+name: "Open the pod bay doors, HAL."
+category: Binary Exploitation
+description: |
+  HAL is the only thing that stands between you and this flag. Find a way to take him down.
+
+  by sasha (kyrili on discord)
+author: sasha
+value: 200
+type: standard
+connection_info: nc ctf.isss.io 2001
+flags:
+  - utflag{cl4551c_buff3r_ov3rfl0w}
+# remove the files key entirely if the challenge should contain no files
+files:
+  - pod-bay-doors
+state: hidden

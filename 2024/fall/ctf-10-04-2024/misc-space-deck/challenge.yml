@@ -1,0 +1,14 @@
+name: "Space Deck"
+category: Misc
+description: |
+  My friend sent me this screenshot of a space themed deck. It's so unique, I don't think anyone has made this deck before. In fact, it may even not be a legal deck...
+  
+  By sasha (kyrili on discord)
+author: sasha
+value: 100
+type: standard
+flags:
+  - utflag{l3g4l_0nly_1n_3xp4nd3d}
+files:
+  - image.png
+state: hidden

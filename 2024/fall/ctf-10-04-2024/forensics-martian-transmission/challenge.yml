@@ -1,0 +1,14 @@
+name: "Martian Transmission"
+category: Forensics
+description: |
+  My friends laughed at me when I installed 2 radio receivers on my roof, but I just heard this weird sounding thing. I think it's from Mars!
+
+  by sasha (kyrili on discord)
+author: sasha
+value: 100
+type: standard
+flags:
+  - utflag{al13n_t3chn0l0gy}
+files:
+  - transmission.wav
+state: hidden

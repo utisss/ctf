@@ -1,0 +1,14 @@
+name: Zambian Magic
+category: Web
+description: |
+  I found this website for Zambia's space program. Did they actually go to the moon?
+
+  by sasha (kyrili on discord)
+author: sasha
+value: 300
+type: standard
+connection_info: http://ctf.isss.io:1960
+flags:
+  - utflag{php_is_so_magical}
+# Remove if you don't want to give source
+state: hidden

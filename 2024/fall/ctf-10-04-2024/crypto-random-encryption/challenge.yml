@@ -1,0 +1,15 @@
+name: "Random Encryption"
+category: Cryptography
+description: |
+  Just learned in cryptography today that a random value xored with anything is indistinguishable from random. There's no way you can decrypt my flag now!
+
+  by sasha (kyrili on discord)
+author: sasha
+value: 300
+type: standard
+flags:
+  - utflag{s33d_y0ur_r4nd5}
+files:
+  - chall.c
+  - output.txt
+state: hidden

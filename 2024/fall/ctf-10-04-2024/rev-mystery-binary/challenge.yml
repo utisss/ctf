@@ -1,0 +1,15 @@
+name: "Mystery Binary"
+category: Reverse Engineering
+description: |
+  What kind of file is this?
+
+  By sasha (kyrili on discord)
+author: sasha
+value: 300
+type: standard
+flags:
+  - utflag{c0mp1l3d_pyth0n}
+files:
+  - mystery
+  - output.txt
+state: hidden

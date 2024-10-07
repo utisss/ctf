@@ -1,0 +1,5 @@
+inp = input("What's the flag?\n")
+b = [ord(inp[0])]
+for i in range(1, len(inp)):
+    b.append(ord(inp[i]) ^ b[i-1])
+print(bytes(b))

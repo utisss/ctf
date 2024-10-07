@@ -1,0 +1,14 @@
+name: "Complextro"
+category: Forensics
+description: |
+  The point of this challenge is to force you to listen to some 2010s music. No, really.
+  
+  By sasha (kyrili on discord)
+author: sasha
+value: 100
+type: standard
+flags:
+  - utflag{subscribe_to_umbresp}
+files:
+  - video_game_ahh_music.mp3
+state: hidden

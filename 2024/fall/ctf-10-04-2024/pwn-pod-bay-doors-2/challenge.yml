@@ -1,0 +1,16 @@
+name: "Open the pod bay doors, HAL. 2"
+category: Binary Exploitation
+description: |
+  HAL has learned from last time and no longer trusts the filesystem to keep his secrets safe. From now on, he's storing them in memory. Also, he replaced all his gets with fgets.
+
+  by sasha (kyrili on discord)
+author: sasha
+value: 300
+type: standard
+connection_info: nc ctf.isss.io 2002
+flags:
+  - utflag{st4ck_m3m0ry_r34d}
+# remove the files key entirely if the challenge should contain no files
+files:
+  - pod-bay-doors-2
+state: hidden

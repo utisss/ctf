@@ -1,0 +1,17 @@
+name: "Rocket Launch"
+category: Binary Exploitation
+description: |
+  Hello comrade. This rocket from our sworn capitalist enemy is due to launch in T-5 minutes. Sabotage it.
+
+  by sasha (kyrili on discord)
+  adapted from a problem idea by caleb
+author: sasha
+value: 100
+type: standard
+connection_info: nc ctf.isss.io 5774
+flags:
+  - utflag{r3turn_4ddr3ss_cl0bb3r3d}
+# remove the files key entirely if the challenge should contain no files
+files:
+  - rocket
+state: hidden
