@@ -1,0 +1,19 @@
+name: "Spooky Signature"
+category: Cryptography
+description: |
+  I rolled my own digital signature scheme. It's a little scary, but I basically just reduced it to
+  RSA, so you shouldn't be able to break it.
+
+  by sasha (@kyrili on discord)
+author: sasha
+value: 500
+type: standard
+connection_info: nc ctf.isss.io 6937
+flags:
+  - utflag{d0nt_tru5t_ur_t3xtb00k}
+# remove the files key entirely if the challenge should contain no files
+hints:
+  - https://cryptobook.nakov.com/digital-signatures/rsa-signatures
+files:
+  - src/main.py
+state: hidden

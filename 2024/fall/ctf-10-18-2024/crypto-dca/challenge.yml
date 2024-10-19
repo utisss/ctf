@@ -1,0 +1,18 @@
+name: "DCA"
+category: Cryptography
+description: |
+  Due to a national shortage of primes, the US Department of Agriculture is rationing all citizens
+  to a limit of one generated prime number per CTF challenge.
+
+  by sasha (@kyrili on discord)
+author: sasha
+value: 500
+type: standard
+flags:
+  - utflag{th3_t0t13nt_funct10n_uns1mpl1f13d}
+hints:
+  - How could you make n if you only had one prime number?
+  - What is Euler's totient function?
+files:
+  - rsa.txt
+state: hidden

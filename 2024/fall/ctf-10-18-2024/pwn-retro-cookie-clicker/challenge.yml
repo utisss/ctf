@@ -1,0 +1,19 @@
+name: "Retro Cookie Clicker"
+category: Binary Exploitation
+description: |
+  Gotta click em all!
+
+  by sasha (@kyrili on discord)
+author: sasha
+value: 500
+type: standard
+flags:
+  - utflag{1337hax0r}
+hints:
+  - Have you ever used a program like Cheat Engine? What exactly does it do?
+  - Many console emulators have debug/cheat features that allow you to view and modify game memory.
+  - The game engine I made this in only supports 16-bit signed integers for some reason. I had to
+  account for this when programming the game.
+files:
+  - retro-cookie-clicker.gb
+state: hidden

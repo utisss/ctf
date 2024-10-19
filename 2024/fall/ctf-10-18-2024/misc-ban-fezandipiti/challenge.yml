@@ -1,0 +1,16 @@
+name: "Why Fezandipiti ex should be banned"
+category: Misc
+description: |
+  On Wednesday I gave a talk about why Fez should be banned from standard format. Here's the talk:
+  https://docs.google.com/presentation/d/1nX70r2AGm88syZNrBcgpH5xWJE0ebPt70uaRV3lVceI/edit?usp=sharing
+
+  Unfortunately, it wasn't recorded, so you'll just have to imagine me talking about what's on the
+  slides, because the text is just an outline (as it should be)
+
+  by sasha (@kyrili on discord)
+author: sasha
+value: 300
+type: standard
+flags:
+  - utflag{that_bird_that_i_hate}
+state: hidden

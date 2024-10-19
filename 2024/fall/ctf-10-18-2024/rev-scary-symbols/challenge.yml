@@ -1,0 +1,15 @@
+name: "Scary Symbols"
+category: Reverse Engineering
+description: |
+  I looked into the portal, and I saw this. A dimension where this is what code looks like. I'm
+  never going back there again.
+
+  by sasha (@kyrili on discord)
+author: sasha
+value: 300
+type: standard
+flags:
+  - utflag{jsf$*k_is_funny}
+files:
+  - aaaaaaaaaaaaaaaaa.txt
+state: hidden

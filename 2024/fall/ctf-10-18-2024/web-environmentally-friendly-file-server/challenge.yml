@@ -1,0 +1,20 @@
+name: "Environmentally Friendly File Server"
+category: Web
+description: |
+  Check out my new sustainable fileserver! It only works with text files though. 
+  It's really simple so I'll give you the source code too. Don't think you'll find any of my secrets
+  there, though, I stopped hardcoding them into the files and started passing them in from the shell
+  instead.
+
+  by sasha (@kyrili on discord)
+author: sasha
+value: 500
+type: standard
+connection_info: http://ctf.isss.io:5311
+hints:
+  - Are there any other files you can access apart from the ones listed?
+  - https://linux.die.net/man/1/curl
+  - Is there a file that contains environment variables?
+flags:
+  - utflag{gl0bal_w4rm1ng_1s_pr3tty_sc4ry}
+state: hidden

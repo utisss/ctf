@@ -1,0 +1,18 @@
+name: "Vicious Vigenere"
+category: Cryptography
+description: |
+  Vigenere ciphers are so easy to decode automatically through frequency analysis, so I made the flag
+  a random jumble of letters instead. However, I can assure you this challenge is still possible.
+
+  kvgsdy{rqwhzwzxohofhilhofulsnndaoqdngsnbt}
+
+  by sasha (@kyrili on discord)
+author: sasha
+value: 300
+type: standard
+flags:
+  - utflag{bovawejvnalnrgkalnejrgklkmpwkoclam}
+hints:
+  - We know what the first 6 characters *should* be
+  - The key is at most 6 characters, otherwise the problem would be impossible
+state: hidden

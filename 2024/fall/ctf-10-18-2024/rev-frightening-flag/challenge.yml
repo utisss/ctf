@@ -1,0 +1,18 @@
+name: "Frightening Flag"
+category: Reverse Engineering
+description: |
+  I was typing out the flag for you, but I was really scared so I made a bunch of mistakes. Luckily,
+  mistakes can be fixed! Unfortunately, I haven't implemented that feature in my text editor yet.
+
+  by sasha (@kyrili on discord)
+author: sasha
+value: 300
+type: standard
+flags:
+  - utflag{boo00o00o0000ooo0oo000o00oo!}
+hints:
+  - Is there a character that repeats frequently in the output? What does it mean?
+# remove the files key entirely if the challenge should contain no files
+files:
+  - flag.txt
+state: hidden
